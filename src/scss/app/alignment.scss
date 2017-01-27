@@ -1,0 +1,41 @@
+.vcenter-parent {
+    display: table;
+    width: 100%;
+    .vcenter {
+        display: table-cell;
+        vertical-align: middle !important;
+    }
+}
+
+.gvcenter-parent, .vcenter-parent-ghost {
+    white-space: nowrap;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+    .vcenter {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.fvcenter-parent, .vcenter-parent-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .vcenter {
+        min-width: 1px;
+    }
+}
+
+.tvcenter-parent, .vcenter-parent-translate {
+    min-height: 1px;
+    .vcenter {
+        position: relative;
+        transform: translate(0px, -50%);
+        top: 50%;
+    }
+}

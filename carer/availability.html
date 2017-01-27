@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Availability | Find a Carer</title>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i" rel="stylesheet">
+		<link rel="canonical" href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+			@font-face {
+			    font-family: Myriad Pro Bold Condensed;
+			    src: url("../src/fonts/MyriadPro-BoldCond.otf") format("opentype");
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../dist/css/style.css" type="text/css" />
+	</head>
+	<body class="admin admin-carer carer-availability">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    <header class="site-header">
+		        <div class="inner">
+
+                    <nav class="navbar navbar-default">
+                        <div class="container container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img src="../src/img/logo.png" alt="Find A Carer logo">
+                                </a>
+                            </div>
+                            
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="carer-search.html">Carer Search</a></li>
+                                    <li><a href="carer/inbox.html">Inbox</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Carer Pages <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="admin-baseline.html">Baseline</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="dashboard.html">Dashboard</a></li>
+                                            <li><a href="availability.html">Availabililty</a></li>
+                                            <li><a href="needs-and-preferences.html">Needs and Preferences</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="carer/profile.html">My Profile</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/signin.html">Sign Out</a></li>
+                                </ul>
+                                
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav> <!-- end .navbar -->
+
+		        </div>
+		    </header>
+		    
+		    <div class="site-content">
+		        <div class="inner">
+		            
+		            <div class="container">
+		                <div class="row clearfix margin sidebar-right">
+		                    
+		                    <div class="fixed-sidebar">
+		                        <div class="col-xs-12">
+		                            <div class="list-group">
+                                        <a href="#" class="list-group-item">1. Your Profile
+                                            <span class="badge"><i class="fa fa-check"></i></span>
+                                        </a>
+                                        <a href="#" class="list-group-item">2. Bio & Preferences
+                                            <span class="badge"><i class="fa fa-check"></i></span>
+                                        </a>
+                                        <a href="#" class="list-group-item">3. Experience
+                                            <span class="badge"><i class="fa fa-check"></i></span>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-info active">4. Availability
+                                        </a>
+                                        <a href="#" class="list-group-item">5. Your photo
+                                        </a>
+                                        
+                                    </div>
+		                        </div>
+		                    </div>
+	                        <div class="responsive-content">
+		                        <div class="inner">
+		                            <form role="form" class="availability-preference clearfix">
+		                                <div class="col-xs-12">
+    		                                <h1>YOUR AVAILABILITY PREFERENCE</h1>
+    		                                <b>Even if you are available for 3 hours in a particular day of the week - someone will find it beneficial</b>
+    		                            </div>
+    		                            <div class="col-xs-12">
+    		                                <div class="form-group">
+    		                                    <h3>General Preferences</h3>
+    		                                    
+		                                        <b>Are you available to start on short notice?</b><br>
+                                                <div class="abc-radio">
+                                                    <span class="abc-radio-success">
+                                                        <input type="radio" name="avail-start" id="AvailStart-yes" value="yes" checked="">
+                                                        <label for="AvailStart-yes">Yes</label>
+                                                    </span>
+                                                    <span class="abc-radio-danger">
+                                                        <input type="radio" name="avail-start" id="AvailStart-no" value="no">
+                                                        <label for="AvailStart-no">No</label>
+                                                    </span>
+                                                </div>
+                                                
+                                                <b>Are you available to casual respite care?</b><br>
+                                                <div class="abc-radio">
+                                                    <span class="abc-radio-success">
+                                                        <input type="radio" name="avail-casual-respite" id="AvailCasualRespite-yes" value="yes" checked="">
+                                                        <label for="AvailCasualRespite-yes">Yes</label>
+                                                    </span>
+                                                    <span class="abc-radio-danger">
+                                                        <input type="radio" name="avail-casual-respite" id="AvailCasualRespite-no" value="no">
+                                                        <label for="AvailCasualRespite-no">No</label>
+                                                    </span>
+                                                </div>
+                                                
+                                                <b>Can you provide live-in care?</b><br>
+                                                <div class="abc-radio">
+                                                    <span class="abc-radio-success">
+                                                        <input type="radio" name="avail-livein-care" id="AvailLiveInCare-yes" value="yes" checked="">
+                                                        <label for="AvailLiveInCare-yes">Yes</label>
+                                                    </span>
+                                                    <span class="abc-radio-danger">
+                                                        <input type="radio" name="avail-livein-care" id="AvailLiveInCare-no" value="no">
+                                                        <label for="AvailLiveInCare-no">No</label>
+                                                    </span>
+                                                </div>
+                                                    
+                                                    
+    		                                </div>
+    		                                <div class="form-group">
+    		                                    <h3>Detailed availability preference</h3>
+    		                                    <span>Tick the relevant boxes against your availability. Anything marked in green will show your avaialble day/hour slots</span>
+    		                                    <div id="DetailedAvailabilityPreferences">
+    		                                        <table class="table">
+    		                                            <tr>
+    		                                                <th>
+    		                                                    <span>Available</span>
+    		                                                    <span>Unavailable</span>
+    		                                                </th>
+    		                                                <th>Sun.</th>
+    		                                                <th>Mon.</th>
+    		                                                <th>Tue.</th>
+    		                                                <th>Wed.</th>
+    		                                                <th>Thu.</th>
+    		                                                <th>Fri.</th>
+    		                                                <th>Sat.</th>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Early Morning</b> (6am-9am)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-0600-0900"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-0600-0900"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-0600-0900"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-0600-0900"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-0600-0900"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-0600-0900"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-0600-0900"></td>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Late Morning</b> (9am-12pm)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-0900-1200"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-0900-1200"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-0900-1200"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-0900-1200"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-0900-1200"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-0900-1200"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-0900-1200"></td>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Early Afternoon</b> (12pm-3pm)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-1200-1500"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-1200-1500"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-1200-1500"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-1200-1500"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-1200-1500"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-1200-1500"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-1200-1500"></td>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Late Afternoon</b> (3pm-6pm)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-1500-1800"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-1500-1800"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-1500-1800"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-1500-1800"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-1500-1800"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-1500-1800"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-1500-1800"></td>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Early Evening</b> (6pm-9pm)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-1800-2100"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-1800-2100"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-1800-2100"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-1800-2100"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-1800-2100"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-1800-2100"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-1800-2100"></td>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Late Evening</b> (9pm-12am)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-2100-0000"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-2100-0000"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-2100-0000"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-2100-0000"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-2100-0000"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-2100-0000"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-2100-0000"></td>
+    		                                            </tr>
+    		                                            <tr>
+    		                                                <td><b>Overnight</b> (12am-6am)</td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sun-0000-0600"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="mon-0000-0600"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="tue-0000-0600"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="wed-0000-0600"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="thu-0000-0600"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="fri-0000-0600"></td>
+    		                                                <td class="text-center"><input type="checkbox" name="detailed-avail-pref" value="sat-0000-0600"></td>
+    		                                            </tr>
+    		                                            
+    		                                            
+    		                                        </table>
+    		                                    </div>
+    		                                </div>
+    		                                <button class="btn btn-lg btn-primary">SAVE & CONTINUE</button>
+    		                                <br><br>
+    		                                
+    		                            </div>
+    		                            
+		                            </form>
+		                            
+		                        </div>
+		                    </div>
+		                    
+		                </div>
+		            </div>
+		            
+		        </div>
+		    </div>
+		    
+		    <footer class="site-footer">
+		        <div class="inner">
+		            
+		            <div class="container">
+		                <div class="row">
+		                	
+		                	<div class="content-block footer-navigation">
+		                		<nav>
+		                			<ul>
+		                				<li><a href="#">ABOUT US</a></li>
+		                				<li class="active"><a href="#">TIPS & RESOURCES</a></li>
+		                				<li><a href="#">SUCCESS STORIES</a></li>
+		                				<li><a href="#">CONTACT US</a></li>
+		                			</ul>
+		                		</nav>
+		                	</div>
+		                    
+                            <div class="content-block sitemap col-xs-12">
+		                        <h4>SITE MAP</h4>
+								<div class="row">
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Aged Care in Your Capital City: </b><br>
+										<ul class="no-padding">
+											<li><a href="#">Aged Care in Sydney (NSW)</a></li>
+											<li><a href="#">Aged Care in Melbourne (VIC)</a></li>
+											<li><a href="#">Aged Care in Brisbane (QLD)</a></li>
+											<li><a href="#">Aged Care in Perth (WA)</a></li>
+											<li><a href="#">Aged Care in Canberra (ACT)</a></li>
+											<li><a href="#">Aged Care in Adelaide (SA)</a></li>
+											<li><a href="#">Aged Care in Darwin (NT)</a></li>
+											<li><a href="#">Aged Care in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Disability Care in Your Capital City: </b><br>
+										<ul class="no-padding">
+											<li><a href="#">Disability Care in Sydney (NSW)</a></li>
+											<li><a href="#">Disability Care in Melbourne (VIC)</a></li>
+											<li><a href="#">Disability Care in Brisbane (QLD)</a></li>
+											<li><a href="#">Disability Care in Perth (WA)</a></li>
+											<li><a href="#">Disability Care in Canberra (ACT)</a></li>
+											<li><a href="#">Disability Care in Adelaide (SA)</a></li>
+											<li><a href="#">Disability Care in Darwin (NT)</a></li>
+											<li><a href="#">Disability Care in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Special Needs Child Care in Your Capital City: </b><br>
+										<ul>
+											<li><a href="#">Special Needs Child Care in Sydney (NSW)</a></li>
+											<li><a href="#">Special Needs Child Care in Melbourne (VIC)</a></li>
+											<li><a href="#">Special Needs Child Care in Brisbane (QLD)</a></li>
+											<li><a href="#">Special Needs Child Care in Perth (WA)</a></li>
+											<li><a href="#">Special Needs Child Care in Canberra (ACT)</a></li>
+											<li><a href="#">Special Needs Child Care in Adelaide (SA)</a></li>
+											<li><a href="#">Special Needs Child Care in Darwin (NT)</a></li>
+											<li><a href="#">Special Needs Child Care in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Care Jobs in Your Capital City: </b><br>
+										<ul class="no-padding">
+											<li><a href="#">Care Jobs in Sydney (NSW)</a></li>
+											<li><a href="#">Care Jobs in Melbourne (VIC)</a></li>
+											<li><a href="#">Care Jobs in Brisbane (QLD)</a></li>
+											<li><a href="#">Care Jobs in Perth (WA)</a></li>
+											<li><a href="#">Care Jobs in Canberra (ACT)</a></li>
+											<li><a href="#">Care Jobs in Adelaide (SA)</a></li>
+											<li><a href="#">Care Jobs in Darwin (NT)</a></li>
+											<li><a href="#">Care Jobs in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+								</div>
+                    </div> <!--end .content-block.sitemap-->
+
+                        </div> <!--end .row -->
+		            </div>
+		        </div>
+		    </footer>
+		    
+		</div>
+		
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../dist/js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+@mixin boxshadow-inset-top( $startColor: rgba(225,225,225, 0.65), $endColor: rgba(242,242,242,0), $height: 10px){
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $height;
+        background: -moz-linear-gradient(top, $startColor 0%, $endColor 100%);
+        background: -webkit-linear-gradient(top, $startColor 0%,$endColor 100%);
+        background: linear-gradient(to bottom, $startColor 0%,$endColor 100%);
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a66d6d6d', endColorstr='#00000000',GradientType=0 );
+   }
+}
+
+// starts from bottom
+@mixin boxshadow-inset-bottom( $startColor: rgba(225,225,225, 0.65), $endColor: rgba(242,242,242,0), $height: 10px){
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: $height;
+        background: -moz-linear-gradient(top,  $endColor 0%, $startColor 100%);
+        background: -webkit-linear-gradient(top,  $endColor 0%,$startColor 100%);
+        background: linear-gradient(to bottom,  $endColor 0%,$startColor 100%);
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a66d6d6d',GradientType=0 );
+    }
+}
+
+@mixin boxshadow-inset( $startColor: rgba(225,225,225, 0.65), $endColor: rgba(242,242,242,0), $height: 10px ){
+    position: relative;
+    
+    @include boxshadow-inset-top( $startColor, $endColor, $height ); 
+    @include boxshadow-inset-bottom( $startColor, $endColor, $height ); 
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.boxshadow-inset {
+    &-t, &-b, &-tb {
+        position: relative !important;
+    }
+    &-t {
+        @include boxshadow-inset-top(); 
+    }
+    &-b {
+        @include boxshadow-inset-bottom(); 
+    }
+    &-tb {
+        @include boxshadow-inset();
+    }
+}
+
+.no {
+    &-padding {
+        padding: 0 !important;
+    }
+    &-margin {
+        margin: 0 !important;
+    }
+    &-wrap {
+        white-space: nowrap !important;
+    }
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+}
+
+hr {
+    border-color: #ddd;
+}
+
+
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+<title>Seeker Registration | Find a Carer</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i" rel="stylesheet">
+<link rel="canonical" href="/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style type="text/css">
+	@font-face {
+	    font-family: Myriad Pro Bold Condensed;
+	    src: url("src/fonts/MyriadPro-BoldCond.otf") format("opentype");
+	}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="dist/css/bootstrap-custom.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css" />
+<link rel="stylesheet" href="dist/css/style.css" type="text/css" />
+	</head>
+	<body class="site page page-home">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    <header class="site-header">
+    <div class="inner">
+
+        <nav class="navbar navbar-default">
+            <div class="container container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="src/img/logo.png" alt="Find A Carer logo">
+                    </a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="carer-search.html">Carer Search</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Carer/Seeker <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="baseline-carer.html">Baseline Carer</a></li>
+                                <li><a href="carer-dashboard.html">Dashboard</a></li>
+                                <li><a href="carer-needs-and-preferences.html">Needs and Preferences</a></li>
+                                <li><a href="carer-availability.html">Availability</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="baseline-seeker.html">Baseline Seeker</a></li>
+                                <li><a href="seeker-dashboard.html">Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="register-seeker.html">Seeker Registration</a></li>
+                                <li><a href="search-results.html">Search Results</a></li>
+                                <li><a href="full-profile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="signin.html">Sign Out</a></li>
+                        
+                        
+                    </ul>
+                    
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav> <!-- end .navbar -->
+
+    </div>
+</header>
+		    
+		    <div class="site-content">
+		        <div class="inner">
+
+                <!-- content starts here -->
+
+                    <div class="container">
+                        <div class="row">
+                               
+                            <form method="POST" class="content-block register clearfix">
+                                <div class="register-header">
+                                    <h1 class="text-blue">REGISTER TO CONTACT CARERS &amp; POST JOBS</h1>
+                                    <p>
+                                        <span class="description">Get started! It only takes a few minutes.</span>
+                                        <span class="instead">>> or <a href="register-carer.html">Register as a carer</a> instead</span>
+                                    </p>
+                                </div><!-- end .register-header -->
+                                <div class="register-body clearfix">
+                                    <div class="register-inputgroup col-sm-9 col-xs-12 clearfix">
+                                        <div class="col-sm-6">
+                                            <label for="FirstName">First Name<span class="required">*</span></label>
+                                            <span class="error">This field is required</span>
+                                            <input type="text" name="first-name" class="form-control input-sm" id="FirstName" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="">Surname<span class="required">*</span></label>
+                                            <input type="text" name="surname" class="form-control input-sm" id="Surname"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Address">Address<span class="required">*</span></label>
+                                            <input type="text" name="Address" class="form-control input-sm" id="Suburb"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Suburb">Suburb<span class="required">*</span></label>
+                                            <input type="text" name="suburb" class="form-control input-sm" id="Suburb"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="State">State<span class="required">*</span></label>
+                                            <select name="state" class="form-control input-sm" id="State">
+                                                <option value="" selected="selected">-</option>
+                                                <option value="nsw">New South Wales</option>
+                                                <option value="vic">Victoria</option>
+                                                <option value="qld">Queensland</option>
+                                                <option value="tas">Tasmania</option>
+                                                <option value="sa">South Australia</option>
+                                                <option value="wa">Western Australia</option>
+                                                <option value="act">Australian Capital Territory</option>
+                                                <option value="nt">Northern Territory</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Postcode">Postcode<span class="required">*</span></label>
+                                            <input type="text" name="postcode" class="form-control input-sm" id="Postcode"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Password">password<span class="required">*</span></label>
+                                            <input type="password" name="password" class="form-control input-sm" id="Password"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="PasswordMatch">Password (Again)<span class="required">*</span></label>
+                                            <input type="password" name="password-match" class="form-control input-sm" id="PasswordMatch"/>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="Email">Email Address<span class="required">*</span></label>
+                                            <input type="email" name="email" class="form-control input-sm" id="Email"/>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <small>By clicking "Join Now", you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></small>
+                                                </div>
+                                                <div class="col-sm-6 clearfix">
+                                                    <button type="submit" class="pull-right btn btn-lg btn-primary">JOIN NOW</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- end .register-inputgroup -->
+                                    <div class="register-sidebar col-sm-3 hidden-xs no-padding">
+                                        <img src="src/img/background-images/register-seeker1.jpg" style="width: 100%" alt="Register seeker image"></img>
+                                    </div><!-- end. register-sidebar -->
+                                </div><!-- end .register-body -->
+                            </form> <!-- end form.content-block.register -->
+                            
+                        </div>
+                    </div>
+
+                <!-- content ends here -->
+		            
+		        </div>
+		    </div>
+		    
+		    <footer class="site-footer">
+    <div class="inner">
+        
+        <div class="container">
+            <div class="row">
+            	
+            	<div class="content-block footer-navigation">
+            		<nav>
+            			<ul>
+            				<li><a href="#">ABOUT US</a></li>
+            				<li class="active"><a href="#">TIPS & RESOURCES</a></li>
+            				<li><a href="#">SUCCESS STORIES</a></li>
+            				<li><a href="#">CONTACT US</a></li>
+            			</ul>
+            		</nav>
+            	</div>
+                
+                <div class="content-block sitemap col-xs-12">
+                    <h4>SITE MAP</h4>
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Aged Care in Your Capital City: </b><br>
+							<ul class="no-padding">
+								<li><a href="#">Aged Care in Sydney (NSW)</a></li>
+								<li><a href="#">Aged Care in Melbourne (VIC)</a></li>
+								<li><a href="#">Aged Care in Brisbane (QLD)</a></li>
+								<li><a href="#">Aged Care in Perth (WA)</a></li>
+								<li><a href="#">Aged Care in Canberra (ACT)</a></li>
+								<li><a href="#">Aged Care in Adelaide (SA)</a></li>
+								<li><a href="#">Aged Care in Darwin (NT)</a></li>
+								<li><a href="#">Aged Care in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Disability Care in Your Capital City: </b><br>
+							<ul class="no-padding">
+								<li><a href="#">Disability Care in Sydney (NSW)</a></li>
+								<li><a href="#">Disability Care in Melbourne (VIC)</a></li>
+								<li><a href="#">Disability Care in Brisbane (QLD)</a></li>
+								<li><a href="#">Disability Care in Perth (WA)</a></li>
+								<li><a href="#">Disability Care in Canberra (ACT)</a></li>
+								<li><a href="#">Disability Care in Adelaide (SA)</a></li>
+								<li><a href="#">Disability Care in Darwin (NT)</a></li>
+								<li><a href="#">Disability Care in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Special Needs Child Care in Your Capital City: </b><br>
+							<ul>
+								<li><a href="#">Special Needs Child Care in Sydney (NSW)</a></li>
+								<li><a href="#">Special Needs Child Care in Melbourne (VIC)</a></li>
+								<li><a href="#">Special Needs Child Care in Brisbane (QLD)</a></li>
+								<li><a href="#">Special Needs Child Care in Perth (WA)</a></li>
+								<li><a href="#">Special Needs Child Care in Canberra (ACT)</a></li>
+								<li><a href="#">Special Needs Child Care in Adelaide (SA)</a></li>
+								<li><a href="#">Special Needs Child Care in Darwin (NT)</a></li>
+								<li><a href="#">Special Needs Child Care in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Care Jobs in Your Capital City: </b><br>
+							<ul class="no-padding">
+								<li><a href="#">Care Jobs in Sydney (NSW)</a></li>
+								<li><a href="#">Care Jobs in Melbourne (VIC)</a></li>
+								<li><a href="#">Care Jobs in Brisbane (QLD)</a></li>
+								<li><a href="#">Care Jobs in Perth (WA)</a></li>
+								<li><a href="#">Care Jobs in Canberra (ACT)</a></li>
+								<li><a href="#">Care Jobs in Adelaide (SA)</a></li>
+								<li><a href="#">Care Jobs in Darwin (NT)</a></li>
+								<li><a href="#">Care Jobs in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+					</div>
+        </div> <!--end .content-block.sitemap-->
+
+            </div> <!--end .row -->
+        </div>
+    </div>
+</footer>
+
+<script src="//localhost:35729/livereload.js"></script>
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

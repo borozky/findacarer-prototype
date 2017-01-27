@@ -1,0 +1,416 @@
+.content-block.profile {
+	background-color: $lightgrey;
+	padding: 15px 0;
+	margin-top: 15px;
+
+	.profile-heading {
+		padding-left: 15px;
+		padding-right: 15px;
+		h1 {
+			@include myriad-pro(36px);
+			span {}
+		}
+		.btn {
+			border-radius: 0;
+		}
+	}
+	.breadcrumb {
+		background-color: $lightpurple;
+		font-size: 12px;
+		white-space: nowrap;
+		overflow-y: hidden;
+		margin-bottom: 0;
+		padding: 14px 15px;
+    	border-radius: 0;
+	}
+	.profile-details {
+		.profile-information {
+			.info-block {
+				padding: 15px;
+				margin-top: 7px;
+				margin-bottom: 8px;
+				background-color: #fff;
+				border-top: 1px solid #e6e6e6;
+    			border-bottom: 1px solid #e6e6e6;
+
+				h3 {}
+				h4 {
+					color: $purple;
+				}
+				& > p {}
+				& > ul {
+					& li {}
+				}
+
+				// summary
+				&.summary {
+					padding: 5px;
+					margin-top: 15px;
+
+					.inner {
+						position: relative;
+					}
+					img.profile-img {
+						display: inline-block;
+						float: left;
+						max-width: 100px;
+						margin-right: 7px;
+
+					}
+					.summary-details {
+						padding-left: 15px;
+						font-size: 12px;
+
+						p {}
+						.detail-name {
+							@include myriad-pro(22px);
+							margin-bottom: 5px;
+							margin-top: 0;
+							padding-top: 5px;
+							color: $blue;
+						}
+						.detail-age-location {
+							font-size: 13px;
+							margin: 0;
+						}
+						.details-extra {
+							margin: 0;
+							b {}
+							& + ul {
+								font-size: 12px;
+								padding-left: 7px;
+								margin: 0;
+								list-style: none;
+								li {}
+							}
+						}
+						.detail-badges {
+							max-width: 480px;
+							a {
+								img {}
+							}
+						}
+						.detail-experience {}
+						.detail-gender {}
+						.detail-last-signin {}
+					}
+				}
+
+				&.availability {
+					.availability-calendar {
+						.cal-note {
+							.legend {
+								display: block;
+								margin-top: 5px;
+								margin-bottom: 5px;
+							}
+						}
+					}
+					.circle {
+						width: 15px;
+						height: 15px;
+						display: inline-block;
+						border-radius: 100%;
+						background-color: $grey;
+						border-color: #ccc;
+						vertical-align: middle;
+						&.avail {
+							background-color: $green;
+						}
+					}
+					.cal-table {
+						margin-left: -10px;
+						margin-right: -10px;
+						table {
+							font-size: 12px;
+							tr {
+								td, th {
+									min-width: 37px;
+									text-align: center;
+								}
+								th {}
+								td {
+									padding: 5px 3px;
+									vertical-align: middle;
+								}
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		.fixed-sidebar {
+			.section {
+				padding: 15px;
+				h4 {
+					font-size: 16px;
+					color: $purple;
+				}
+				ul {
+					li {
+						padding-left: 25px;
+						font-size: 14px;
+						background-position: 0px 8px;
+						line-height: 1.4;
+						padding-top: 3px;
+						padding-bottom: 3px;
+					}
+				}
+
+				.sharer {
+					a {
+						font-size: 24px;
+						color: #fff;
+						.fa {
+							color: $purple;
+
+							&.fa-circle {
+								color: #fff;
+							}
+							&.fa-stack-1x {
+								font-size: 20px;
+							}
+						}
+						&:hover {
+							.fa {
+								color: $green;
+							}
+						}
+					}
+				}
+
+				&:first-child {
+					background-color: $lightpurple;
+				}
+
+				img {
+					max-width: 240px;
+					display: inline-block;
+					width: 100%;
+					margin-bottom: 15px;
+				}
+			}
+
+		}
+	}
+}
+
+@media screen and (min-width: 480px){
+	.content-block.profile {
+		.profile-heading {
+			h1 {
+				span {}
+			}
+		}
+		.breadcrumb {}
+		.profile-details {
+			.profile-information {
+				padding: 15px;
+
+				.info-block {
+					margin-top: 15px;
+					margin-bottom: 15px;
+					border-top: 0;
+					border-bottom: 0;
+					h4 {}
+					h5 {}
+					& > p {}
+					& > ul {
+						& li {}
+					}
+
+					// summary
+					&.summary {
+						.inner {
+							position: relative;
+							overflow: hidden;
+
+						}
+						img.profile-img {
+							width: 200px;
+							max-width: 100%;
+							margin-right: 15px;
+
+
+						}
+						.summary-details {
+							font-size: 14px;
+							p {}
+							.detail-name {
+								margin-top: 15px;
+								padding-top: 0;
+								font-size: 28px;
+							}
+							.detail-age-location {
+								font-size: 18px;
+								margin-top: 0;
+								margin-bottom: 7px;
+							}
+							.details-extra {
+								b {}
+								ul {
+									font-size: 14px;
+									li {
+										font-size: 14px;
+									}
+								}
+							}
+							.details-badges {
+								a {
+									img {}
+								}
+							}
+							.detail-experience {}
+							.detail-gender {}
+							.detail-last-signin {}
+						}
+					}
+
+					&.availability {
+						.availability-calendar {
+							.cal-note {
+								.legend {
+
+								}
+							}
+						}
+						.circle {
+							&.avail {
+
+							}
+						}
+						.cal-table {
+							table {
+								tr {
+									th {}
+									td {}
+								}
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px){
+	.content-block.profile {
+		padding-bottom: 0;
+		.profile-heading {
+			h1 {
+				span {}
+			}
+		}
+		.breadcrumb {}
+		.profile-details {
+			.responsive-content {
+			}
+			.profile-information {
+				position: relative; 
+				&:before {
+						content: "";
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    height: 100%;
+					    width: 10px;
+					    margin-left: -10px;
+					    background: -moz-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(191,191,191,0.65) 100%);
+						background: -webkit-linear-gradient(left, rgba(242,242,242,0) 0%,rgba(191,191,191,0.65) 100%);
+						background: linear-gradient(to right, rgba(242,242,242,0) 0%,rgba(191,191,191,0.65) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', endColorstr='#a6bfbfbf',GradientType=1 );
+				}
+
+				.info-block {
+					h4 {}
+					h5 {}
+					& > p {}
+					& > ul {
+						& li {}
+					}
+
+					// summary
+					&.summary {
+						.inner {}
+						img.profile-img {
+						}
+						.summary-details {
+							p {}
+							.details-name {}
+							.details-age-location {}
+							.details-extra {
+								b {}
+								& + ul {
+									padding-left: 5px;
+									li {
+										font-size: 14px;
+									}
+								}
+							}
+							.detail-badges {
+
+								a {
+									img {}
+								}
+							}
+							.detail-experience {}
+							.detail-gender {}
+							.detail-last-signin {}
+						}
+					}
+
+					&.availability {
+						.availability-calendar {
+							.cal-note {
+								.legend {
+								    display: inline-block;
+									float: right;
+									vertical-align: top;
+
+								}
+							}
+						}
+						.circle {
+							&.avail {
+
+							}
+						}
+						.cal-table {
+							table {
+								tr {
+									th {}
+									td {}
+								}
+							}
+						}
+					}
+					
+				}
+			}
+
+			.fixed-sidebar {
+				.section {
+					padding-right: 30px;
+					&:first-child {
+						position: relative; 
+						&:before {
+								content: "";
+							    position: absolute;
+							    top: 0;
+							    right: 0;
+							    height: 100%;
+							    width: 10px;
+							    background: -moz-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(191,191,191,0.65) 100%);
+								background: -webkit-linear-gradient(left, rgba(242,242,242,0) 0%,rgba(191,191,191,0.65) 100%);
+								background: linear-gradient(to right, rgba(242,242,242,0) 0%,rgba(191,191,191,0.65) 100%);
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', endColorstr='#a6bfbfbf',GradientType=1 );
+						}
+					}
+				}
+			}
+		}
+	}
+}

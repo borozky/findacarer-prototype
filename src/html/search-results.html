@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		@@include('partials/head.html', {
+			"title": "Search Results"
+		})
+
+	</head>
+	<body class="site page page-home">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    @@include('partials/header.html')
+		    
+		    <div class="site-content">
+		        <div class="inner">
+		            
+
+					<div class="container">
+						<div class="row clearfix">
+							<div class="col-xs-12 content-block search-results">
+
+								<div class="results-header row clearfix">
+									<div class="col-xs-12">
+										<h1 class="title">CARER JOBS AROUND <span class="text-purple">BRIGHTON, VICTORIA, 3196</span></h1>
+									</div>
+									<div class="col-xs-12 clearfix" id="RegisterBanner">
+										<b>Register Now To Get Access to: <span class="access">Contact Information</span></b>
+										<a href="register-carer.html" class="btn btn-success">GET STARTED NOW</a>
+									</div>
+								</div><!-- end .results-header -->
+
+								<div class="results-body row clearfix sidebar-left calc">
+									
+									<div class="fixed-sidebar">
+										<form action="#" method="POST" role="form" class="refine-results">
+											<div class="form-group">
+												<h4 class="text-blue text-condensed">REFINE RESULTS</h4>
+												<b class="section-title">GENERAL INFORMATION</b>
+											</div>
+											<div class="form-group">
+												<p>
+													<label for="SearchFilter-find">Find</label>
+													<select name="filter-find" id="SearchFilter-find" class="form-control">
+														<option value="aged-care">Aged Care</option>
+														<option value="another-option">Another Option</option>
+													</select>
+												</p>
+												<p>
+													<label for="SearchFilter-near-postcode">Near</label>
+													<input type="text" name="filter-near-poscode" id="SearchFilter-near-postcode" class="form-control" placeholder="Postcode">
+													<select name="filter-near-distance" id="SearchFilter-near-distance" class="form-control">
+														<option value="50" selected="selected">Within 50km</option>
+														<option value="30">Within 30km</option>
+														<option value="25">Within 25km</option>
+														<option value="20">Within 20km</option>
+														<option value="10">Within 10km</option>
+														<option value="5">Within 5km</option>
+													</select>
+												</p>
+												<p>
+													<button class="btn btn-lg btn-primary">UPDATE RESULTS</button>
+												</p>
+											</div>
+											<div class="form-group">
+												<p>
+													<label for="SearchFilter-age">Age</label>
+													<select name="filter-age" class="form-control" id="SearchFilter-age">
+														<option value="20-30">20-30</option>
+														<option value="30-40">30-40</option>
+														<option value="40-50">40-50</option>
+														<option value="above-50">above 50</option>
+													</select>
+												</p>
+												<p>
+													<label for="SearchFilter-gender">Gender</label>
+													<select name="filter-gender" class="form-control" id="SearchFilter-gender">
+														<option value="m">Male</option>
+														<option value="f">Female</option>
+														<option value="o">Other</option>
+													</select>
+												</p>
+												<p>
+													<label for="SearchFilter-language">Language</label>
+													<select name="filter-language" class="form-control" id="SearchFilter-language">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+													</select>
+												</p>
+												<p>
+													<label for="SearchFilter-raterange">Rate Range</label>
+													<select name="filter-raterange" class="form-control" id="SearchFilter-raterange">
+														<option value="10-20">$10 - $20</option>
+														<option value="20-30">$20 - $30</option>
+														<option value="30-40">$30 - $40</option>
+													</select>
+												</p>
+												<p>
+													<span class="checkbox checkbox-success">
+														<input type="checkbox" name="filter-additional-parameters" id="SearchFilter-comfortablewithpets" value="comfortable with pets" checked="checked">
+														<label for="SearchFilter-comfortablewithpets">Comfortable with Pets</label>
+													</span>
+													<span class="checkbox checkbox-success">
+														<input type="checkbox" name="filter-additional-parameters" id="SearchFilter-nonsmoker" value="no smoker">
+														<label for="SearchFilter-nonsmoker">Non-smoker</label>
+													</span>
+													<span class="checkbox checkbox-success">
+														<input type="checkbox" name="filter-additional-parameters" id="SearchFilter-hasowntransportation" value="has own transportation">
+														<label for="SearchFilter-hasowntransportation">Has own transportation</label>
+													</span>
+													<span class="checkbox checkbox-success">
+														<input type="checkbox" name="filter-addtional-parameters" id="SearchFilter-firstaidexperience" value="first-aid experience">														
+														<label for="SearchFilter-firstaidexperience">First-aid Experience</label>
+													</span>
+													<span class="checkbox checkbox-success">
+														<input type="checkbox" name="filter-additional-parameters" id="SearchFilter-hasphoto" value="has-photo">
+														<label for="SearchFilter-hasphoto">Has photo</label>
+													</span>
+												</p>
+											</div>
+											<div class="form-group">
+												<b class="section-title">EXPERIENCE</b>
+												<p>
+													<label for="SearchFilter-experience-in-services">Experience in Services</label>
+													<select name="filter-experience-services" id="SearchFilter-experience-in-services" class="form-control">
+														<option value="1">experience-1</option>
+														<option value="2">experience-2</option>
+														<option value="3">experience-3</option>
+														<option value="4">experience-4</option>
+														<option value="5">experience-5</option>
+													</select>
+												</p>
+												<p>
+													<label for="SearchFilter-experience-in-conditions">Experience in conditions</label>
+													<select name="filter-experience-conditions" id="SearchFilter-experience-in-conditions" class="form-control">
+														<option value="1">experience-1</option>
+														<option value="2">experience-2</option>
+														<option value="3">experience-3</option>
+														<option value="4">experience-4</option>
+														<option value="5">experience-5</option>
+													</select>
+												</p>
+											</div>
+											<div class="form-group">
+												<b class="section-title">AVAILABILITY</b>
+												<p>
+													<b>Days of the week</b>
+													<span class="avail-days">
+														<span class="col">
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-mon" name="filter-avail" value="mon">
+																<label for="SearchFilter-avail-mon">Monday</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-tue" name="filter-avail" value="tue">
+																<label for="SearchFilter-avail-tue">Tuesday</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-wed" name="filter-avail" value="wed">
+																<label for="SearchFilter-avail-wed">Wednesday</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-thu" name="filter-avail" value="thu">
+																<label for="SearchFilter-avail-thu">Thursday</label>
+															</span>
+														</span>
+														<span class="col">
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-fri" name="filter-avail" value="fri">
+																<label for="SearchFilter-avail-fri">Friday</label>
+
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-sat" name="filter-avail" value="sat">
+																<label for="SearchFilter-avail-sat">Saturday</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" id="SearchFilter-avail-sun" name="filter-avail" value="sun">
+																<label for="SearchFilter-avail-sun">Sunday</label>
+															</span>
+														</span>
+													</span>
+												</p>
+												<p>
+													<b>Times of the day</b>
+													<span class="avail-times">
+														<span class="col">
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-6-9-am" value="0600-0900">
+																<label for="SearchFilter-avail-6-9-am">6-9 AM</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-9-12-am" value="0900-1200">
+																<label for="SearchFilter-avail-9-12-am">9-12 AM</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-12-3-pm" value="1200-1500">
+																<label for="SearchFilter-avail-12-3-pm">12-3 PM</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-3-6-pm" value="1500-1800">
+																<label for="SearchFilter-avail-3-6-pm">3-6 PM</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-6-9-pm" value="1800-2100">
+																<label for="SearchFilter-avail-6-9-pm">6-9 PM</label>
+															</span>
+															
+														</span>
+														<span class="col">
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" for="SearchFilter-avail-9-12-pm" value="1800-0000">
+																<label for="SearchFilter-avail-9-12-pm">9-12 PM</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-12-6-am" value="0000-0600">
+																<label for="SearchFilter-avail-12-6-am">12-6 AM</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-short-notice" value="short-notice">
+																<label for="SearchFilter-avail-short-notice">Short Notice (respite care)</label>
+															</span>
+															<span class="checkbox checkbox-success">
+																<input type="checkbox" name="filter-avail-times" id="SearchFilter-avail-overnight" value="overnight">
+																<label for="SearchFilter-avail-overnight">Overnight</label>
+															</span>
+														</span>
+													</span>
+												</p>
+											</div>
+											<div class="form-group">
+												<b class="section-title">YOU MAY BE INTERESTED IN</b>
+												<img src="src/img/va.jpg" alt="Caring for Veteran">
+												<img src="src/img/rha.jpg" alt="Retirement Income Opportunities">
+											</div>
+
+
+										</form><!-- end .refine-results -->
+									</div><!-- end .fixed-sidebar -->
+									<div class="responsive-content">
+										<div class="inner results">
+
+											<span class="results-count">
+												45 results found
+											</span><!-- end .results-count -->
+											
+											<div class="results-items clearfix">
+
+												<div class="results-item">
+													<div class="result-header">
+														<div class="result-title-area">
+															<h2 class="result-title">Autistic child in need of care</h2>
+															<h4 class="result-subtitle">AGE 21 | LOCATED IN BRIGHTON</h4>
+														</div>
+														<div class="posted-by">
+															<b>Posted by James P on 2/2/2014</b>
+														</div>
+													</div>
+													<div class="sidebar-right margin clearfix result-body">
+														<div class="responsive-content">
+															<div class="inner">
+																<div class="result-description">
+																	<div class="result-meta">
+																		<span class="result-meta-item">
+																			<img src="src/img/pin.png" alt="Pin" class="result-meta-icon">
+																			<b>Brighton East</b><br>
+																			Start Date: 12/3/14
+																		</span>
+																		<span class="result-meta-item">
+																			<img src="src/img/dollar.png" alt="Pin" class="result-meta-icon">
+																			<b>20</b><br>
+																			Hourly Rate
+																		</span>
+																	</div>
+
+																	<div class="result-details">
+																		<h3 class="result-heading">Special Needs Care</h3>
+																		<p class="result-excerpt">
+																			Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+																		</p>
+																	</div>
+
+																</div><!-- end .result-description -->
+															</div>
+														</div><!-- end .responsive-content -->
+														<div class="fixed-sidebar">
+															<div class="inner">
+																<div class="result-available-days">
+																	
+																	<h3 class="result-heading">Weekly 6-9am</h3>
+																	<ul class="avail-days">
+																		<li>Mon</li>
+																		<li>Tue</li>
+																		<li>Wed</li>
+																		<li>Thu</li>
+																		<li>Fri</li>
+																		<li>Sat</li>
+																		<li class="avail">Sun</li>
+																	</ul>
+
+																</div>
+															</div>
+														</div><!-- end .fixed-sidebar -->
+													</div>
+
+													<a href="full-profile.html" class="btn btn-primary btn-lg">SEE FULL PROFILE</a>
+												</div><!-- end .results-item -->
+
+												<div class="results-item">
+													<div class="result-header">
+														<div class="result-title-area">
+															<h2 class="result-title">Autistic child in need of care</h2>
+															<h4 class="result-subtitle">AGE 21 | LOCATED IN BRIGHTON</h4>
+														</div>
+														<div class="posted-by">
+															<b>Posted by James P on 2/2/2014</b>
+														</div>
+													</div>
+													<div class="sidebar-right margin clearfix result-body">
+														<div class="responsive-content">
+															<div class="inner">
+																<div class="result-description">
+																	<div class="result-meta">
+																		<span class="result-meta-item">
+																			<img src="src/img/pin.png" alt="Pin" class="result-meta-icon">
+																			<b>Brighton East</b><br>
+																			Start Date: 12/3/14
+																		</span>
+																		<span class="result-meta-item">
+																			<img src="src/img/dollar.png" alt="Pin" class="result-meta-icon">
+																			<b>20</b><br>
+																			Hourly Rate
+																		</span>
+																	</div>
+
+																	<div class="result-details">
+																		<h3 class="result-heading">Special Needs Care</h3>
+																		<p class="result-excerpt">
+																			Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+																		</p>
+																	</div>
+
+																</div><!-- end .result-description -->
+															</div>
+														</div><!-- end .responsive-content -->
+														<div class="fixed-sidebar">
+															<div class="inner">
+																<div class="result-available-days">
+																	
+																	<h3 class="result-heading">Weekly 6-9am</h3>
+																	<ul class="avail-days">
+																		<li>Mon</li>
+																		<li>Tue</li>
+																		<li>Wed</li>
+																		<li>Thu</li>
+																		<li>Fri</li>
+																		<li>Sat</li>
+																		<li class="avail">Sun</li>
+																	</ul>
+
+																</div>
+															</div>
+														</div><!-- end .fixed-sidebar -->
+													</div>
+
+													<a href="full-profile.html" class="btn btn-primary btn-lg">SEE FULL PROFILE</a>
+												</div><!-- end .results-item -->
+
+												<div class="results-item">
+													<div class="result-header">
+														<div class="result-title-area">
+															<h2 class="result-title">Autistic child in need of care</h2>
+															<h4 class="result-subtitle">AGE 21 | LOCATED IN BRIGHTON</h4>
+														</div>
+														<div class="posted-by">
+															<b>Posted by James P on 2/2/2014</b>
+														</div>
+													</div>
+													<div class="sidebar-right margin clearfix result-body">
+														<div class="responsive-content">
+															<div class="inner">
+																<div class="result-description">
+																	<div class="result-meta">
+																		<span class="result-meta-item">
+																			<img src="src/img/pin.png" alt="Pin" class="result-meta-icon">
+																			<b>Brighton East</b><br>
+																			Start Date: 12/3/14
+																		</span>
+																		<span class="result-meta-item">
+																			<img src="src/img/dollar.png" alt="Pin" class="result-meta-icon">
+																			<b>20</b><br>
+																			Hourly Rate
+																		</span>
+																	</div>
+
+																	<div class="result-details">
+																		<h3 class="result-heading">Special Needs Care</h3>
+																		<p class="result-excerpt">
+																			Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+																		</p>
+																	</div>
+
+																</div><!-- end .result-description -->
+															</div>
+														</div><!-- end .responsive-content -->
+														<div class="fixed-sidebar">
+															<div class="inner">
+																<div class="result-available-days">
+																	
+																	<h3 class="result-heading">Weekly 6-9am</h3>
+																	<ul class="avail-days">
+																		<li>Mon</li>
+																		<li>Tue</li>
+																		<li>Wed</li>
+																		<li>Thu</li>
+																		<li>Fri</li>
+																		<li>Sat</li>
+																		<li class="avail">Sun</li>
+																	</ul>
+
+																</div>
+															</div>
+														</div><!-- end .fixed-sidebar -->
+													</div>
+
+													<a href="full-profile.html" class="btn btn-primary btn-lg">SEE FULL PROFILE</a>
+												</div><!-- end .results-item -->
+
+												<div class="results-item">
+													<div class="result-header">
+														<div class="result-title-area">
+															<h2 class="result-title">Autistic child in need of care</h2>
+															<h4 class="result-subtitle">AGE 21 | LOCATED IN BRIGHTON</h4>
+														</div>
+														<div class="posted-by">
+															<b>Posted by James P on 2/2/2014</b>
+														</div>
+													</div>
+													<div class="sidebar-right margin clearfix result-body">
+														<div class="responsive-content">
+															<div class="inner">
+																<div class="result-description">
+																	<div class="result-meta">
+																		<span class="result-meta-item">
+																			<img src="src/img/pin.png" alt="Pin" class="result-meta-icon">
+																			<b>Brighton East</b><br>
+																			Start Date: 12/3/14
+																		</span>
+																		<span class="result-meta-item">
+																			<img src="src/img/dollar.png" alt="Pin" class="result-meta-icon">
+																			<b>20</b><br>
+																			Hourly Rate
+																		</span>
+																	</div>
+
+																	<div class="result-details">
+																		<h3 class="result-heading">Special Needs Care</h3>
+																		<p class="result-excerpt">
+																			Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+																		</p>
+																	</div>
+
+																</div><!-- end .result-description -->
+															</div>
+														</div><!-- end .responsive-content -->
+														<div class="fixed-sidebar">
+															<div class="inner">
+																<div class="result-available-days">
+																	
+																	<h3 class="result-heading">Weekly 6-9am</h3>
+																	<ul class="avail-days">
+																		<li>Mon</li>
+																		<li>Tue</li>
+																		<li>Wed</li>
+																		<li>Thu</li>
+																		<li>Fri</li>
+																		<li>Sat</li>
+																		<li class="avail">Sun</li>
+																	</ul>
+
+																</div>
+															</div>
+														</div><!-- end .fixed-sidebar -->
+													</div>
+
+													<a href="full-profile.html" class="btn btn-primary btn-lg">SEE FULL PROFILE</a>
+												</div><!-- end .results-item -->
+
+												
+												
+											</div><!-- end .results-items -->
+											<nav aria-label="Page navigation" class="results-pagination">
+												<ul class="pagination">
+													<li>
+														<a href="#" aria-label="Previous">
+															<span aria-hidden="true">&laquo;</span>
+														</a>
+													</li>
+													<li><a href="#">1</a></li>
+													<li><a href="#">2</a></li>
+													<li><a href="#">3</a></li>
+													<li><a href="#">4</a></li>
+													<li><a href="#">5</a></li>
+													<li>
+														<a href="#" aria-label="Next">
+															<span aria-hidden="true">&raquo;</span>
+														</a>
+													</li>
+												</ul>
+											</nav><!-- end .results-pagination -->
+
+										</div><!-- end .results -->
+									</div>
+
+								</div><!-- end .results-body -->
+							</div><!-- end .content-block.search-results -->
+						</div>
+					</div>
+
+
+		        </div>
+		    </div>
+		    
+		    @@include('partials/footer.html')
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

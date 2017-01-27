@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		@@include('partials/head.html', {
+			"title": "Sign In"
+		})
+
+	</head>
+	<body class="site page page-home">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    @@include('partials/header.html')
+		    
+		    <div class="site-content">
+		        <div class="inner">
+		            
+		            <!-- SIGN IN CONTENT START -->
+		            <div class="content-block signin-area" style="background:url(src/img/background-images/bg1.jpg);">
+		            	<form role="form">
+		            		<section class="form-header">
+		            			<div class="inner">
+		            				<h1 class="text-purple text-condensed">SIGN IN</h1>
+		            			</div>
+		            		</section>
+		            		<section class="form-body">
+		            			<div class="inner">
+		            				<div class="errors">
+		            					Username/Password is incorrect
+		            				</div>
+		            				<div class="input">
+		            					<input type="email" class="form-control input-sm" name="email" placeholder="Email Address">
+		            					<input type="password" class="form-control input-sm" name="password" placeholder="Password">
+		            					<span class="checkbox checkbox-success checkbox-circle">
+			                                <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
+			                                <label for="remember-me">Remember Me</label>
+			                            </span>
+		            				</div>
+		            				<div class="links">
+		            					<table>
+		            						<tr>
+		            							<td>
+		            								<button type="submit" onclick="function(e){e.preventDefault(); location.href='carer-dashboard.html';}" class="btn btn-primary btn-lg">
+		            									<i class="fa fa-signin"></i>SIGN IN
+		            								</button>
+		            							</td>
+		            							<td>Or</td>
+		            							<td class="text-center valign-top">
+			                                        <b>Register as a</b><br>
+			                                        <h4><a href="register-seeker.html">SEEKER</a>&nbsp;|&nbsp;<a href="register-carer.html">CARER</a></h4>
+			                                    </td>
+		            						</tr>
+		            						<tr>
+		            							<td colspan="3">
+		            								<a href="#">Forgot Password</a>
+		            							</td>
+		            						</tr>
+		            					</table>
+		            				</div>
+		            			</div>
+		            		</section>
+		            		<section class="form-footer">
+		            			<div class="inner">
+			                        <p>
+			                            Need to acitvate your account?<br>
+			                            <b>Have an activation code to enter to activate your membership?</b> Enter it on the <a href="#">Activate</a> page.
+			                        </p>
+			                        <p>
+			                            <b>Need your code again</b><br>
+			                            Request it again on the <a href="#">Resend Activate</a> page.
+			                        </p>
+			                    </div>
+		            		</section>
+		            	</form>
+		            </div><!-- end .content-block.signin-area -->
+		            <!-- SIGN IN CONTENT END -->
+
+		        </div>
+		    </div>
+		    
+		    @@include('partials/footer.html')
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

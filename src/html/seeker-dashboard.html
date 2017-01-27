@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		@@include('partials/seeker/head.html', { 
+			"title": "Dashboard"
+		})
+
+	</head>
+	<body class="admin admin-seeker seeker-baseline">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    @@include('partials/seeker/header.html')
+		    
+		    <div class="site-content">
+		        <div class="inner">
+		            
+		        	<div class="container">
+		                <div class="row content-block dashboard-welcome">
+		                    
+		                    <div class="col-xs-12 clearfix">
+		                        <header class="text-center">
+		                            <h4>WELCOME TO FIND A CARER</h4>
+		                            <b>Keep an eye out for our welcome email in our mailbox</b>
+		                        </header>
+		                    </div>
+		                    <div class="col-xs-12 clearfix">
+		                        <section class="row clearfix">
+		                            <h1 class="text-center">I'VE JOINED SO WHAT'S NEXT?</h1>
+		                            <div class="col-xs-12 col-sm-6">
+		                                <h4>SEARCH FOR CARERS</h4>
+		                                <table>
+		                                    <tr>
+		                                        <td>
+		                                            <span style="display:block;width:120px;height:120px;background-color:#000"></span>
+		                                        </td>
+		                                        <td class="text-center">
+		                                            <div>
+                                                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+                                                        <p>
+                                                            <a href="#" class="btn btn-lg btn-primary">SEARCH</a>
+                                                        </p>
+		                                            </div>
+		                                        </td>
+		                                    </tr>
+		                                </table>
+		                            </div>
+		                            <div class="col-xs-12 col-sm-6">
+		                                <h4>POST A JOB</h4>
+		                                <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+		                                	<table>
+		                                    <tr>
+		                                        <td>
+		                                            <span style="display:block;width:120px;height:120px;background-color:#000"></span>
+		                                        </td>
+		                                        <td class="text-center">
+		                                            <div>
+		                                                <p>Let our community of carers know the type of care you required.</p>
+    		                                            <p>
+    		                                                <a href="#" class="btn btn-lg btn-success">POST A JOB NOW</a>
+    		                                            </p>
+		                                            </div>
+		                                        </td>
+		                                    </tr>
+		                                </table>
+		                                </div>
+		                            </div>
+		                            <div class="col-xs-12 text-right">
+		                                <a href="#" onclick="dismissWelcomeMessage()">Don't show this screen next time <span class="fa fa-times"></span></a>
+		                            </div>
+		                        </section>
+		                    </div>
+		                    
+		                </div><!-- end .row.content-block.dashboard-welcome -->
+		            </div>
+		            
+		        </div>
+		    </div>
+		    
+		    @@include('partials/seeker/footer.html')
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

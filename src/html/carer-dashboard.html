@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		@@include('partials/carer/head.html', { 
+			"title": "Dashboard"
+		})
+
+	</head>
+	<body class="admin admin-carer dashboard">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    @@include('partials/carer/header.html')
+		    
+		    <div class="site-content">
+		        <div class="inner">
+
+		            <div class="container">
+		                <div class="row content-block dashboard-welcome">
+		                    
+		                    <div class="col-xs-12 clearfix">
+		                        <header class="text-center">
+		                            <h4>WELCOME TO FIND A CARER</h4>
+		                            <b>Keep an eye out for our welcome email in our mailbox</b>
+		                        </header>
+		                    </div>
+		                    <div class="col-xs-12 clearfix">
+		                        <section class="row clearfix">
+		                            <h1 class="text-center">I'VE JOINED SO WHAT'S NEXT?</h1>
+		                            <div class="col-xs-12 col-sm-6">
+		                                <h4>SEARCH FOR JOBS</h4>
+		                                <table>
+		                                    <tr>
+		                                        <td>
+		                                            <span style="display:block;width:120px;height:120px;background-color:#000"></span>
+		                                        </td>
+		                                        <td class="text-center">
+		                                            <div>
+                                                        <p>Find the closest & most relevant job to your needs</p>
+                                                        <p>
+                                                            <a href="#" class="btn btn-lg btn-primary">SEARCH</a>
+                                                        </p>
+		                                            </div>
+		                                        </td>
+		                                    </tr>
+		                                </table>
+		                            </div>
+		                            <div class="col-xs-12 col-sm-6">
+		                                <h4>COMPLETE YOUR PROFILE</h4>
+		                                <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+		                                	<table>
+		                                    <tr>
+		                                        <td>
+		                                            <span style="display:block;width:120px;height:120px;background-color:#000"></span>
+		                                        </td>
+		                                        <td class="text-center">
+		                                            <div>
+		                                                <p>Make sure your profile is complete in order to give yourself the best chance at landing that job</p>
+    		                                            <p>
+    		                                                <a href="#" class="btn btn-lg btn-success">COMPLETE IT NOW</a>
+    		                                            </p>
+		                                            </div>
+		                                        </td>
+		                                    </tr>
+		                                </table>
+		                                </div>
+		                            </div>
+		                            <div class="col-xs-12 text-right">
+		                                <a href="#" onclick="dismissWelcomeMessage()">Don't show this screen next time <span class="fa fa-times"></span></a>
+		                            </div>
+		                        </section>
+		                    </div>
+		                    
+		                </div>
+		            </div>
+		            
+		            <div class="container">
+		            	<div class="row admin-body calc clearfix sidebar-right">
+		            		
+		            		<div class="fixed-sidebar">
+		            			<div class="col-xs-12">
+		            				<h4 class="greeting">Hi there, Nicole</h4>
+		            				<div>
+		            					<img src="src/img/homepage/profile-image-female.png" alt="Profile Image">
+		            					<form>
+		            						<input id="InputUploadNewPhoto" type="file" style="display:none"/><a href="#" id="LinkUploadNewPhoto">Upload your photo</a>
+		            					</form>
+		            				</div>
+		            				
+		            			</div>
+		            			<div class="col-xs-12">
+		            				
+		            			</div>
+		            		</div>
+		            		<div class="responsive-content">
+		            			<div class="inner">
+		            				<div class="col-xs-12 content-block latest-messages">
+		            					<h2>LATEST MESSAGE</h2>
+		            					<div class="table-responsive momentum-scroll">
+		            						<table class="table">
+		            							<tr>
+		            								<td>val2 v</td>
+		            								<td>Re: A Carer for an authentic c...</td>
+		            								<td>May 23, 2014, 5:40pm</td>
+		            								<td><a href="#" class="btn btn-xs btn-default">view</a></td>
+		            							</tr>
+		            							<tr>
+		            								<td>val2 v</td>
+		            								<td>Re: A Carer for an authentic c...</td>
+		            								<td>May 23, 2014, 5:40pm</td>
+		            								<td><a href="#" class="btn btn-xs btn-default">view</a></td>
+		            							</tr>
+		            							
+		            						</table>
+		            					</div>
+		            				</div>
+		            				<div class="col-xs-12 content-block suggested-jobs">
+		            					<h2>SUGGESTED JOBS</h2>
+		            					<p>Based on your location, we have suggested some jobs for you. To change your location please <a href="#">Update your profile</a></p>
+		            					<div class="table-responsive momentum-scroll">
+		            						<table class="table">
+		            							<tr>
+		            								<td>Special needs carer required in Brighton</td>
+		            								<td>Posted 12 hours ago</td>
+		            								<td><a href="#" class="btn btn-xs btn-default">view</a></td>
+		            							</tr>
+		            							<tr>
+		            								<td>Another title</td>
+		            								<td>Posted 2 days ago</td>
+		            								<td><a href="#" class="btn btn-xs btn-default">view</a></td>
+		            							</tr>
+		            						</table>
+		            					</div>
+		            					<div class="text-right">
+	            							<a href="#">Search for more jobs</a>
+	            						</div>
+		            				</div>
+		            			</div>
+		            		</div>
+		            		
+		            	</div>
+		            </div>
+		            
+		        </div>
+		    </div>
+		    
+		    @@include('partials/carer/footer.html')
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

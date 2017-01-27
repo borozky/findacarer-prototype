@@ -1,0 +1,937 @@
+.content-block.search-results {
+	background-color: $lightgrey;
+	margin-top: 15px;
+	.results-header {
+		padding-top: 15px;
+		padding-bottom: 0;
+		.title {
+			@include myriad-pro(30px);
+			letter-spacing: -1px;
+		}
+		
+	}
+
+	.results-body {
+		.fixed-sidebar {
+			.refine-results {
+				padding: 15px;
+
+				h4 {
+					font: 30px "Myriad Pro Bold Condensed";
+					letter-spacing: -1px;
+				}
+
+				.form-group {
+					img {
+						margin-bottom: 15px;
+						max-width: 220px;
+						width: 100%;
+					}
+				}
+
+				button.btn {
+					font-size: 14px;
+					border-radius: 0;
+				}
+				input, select, button {
+					border-radius: 0;
+				}
+				input + select {
+					margin-top: 7.5px;
+				}
+				.checkbox > input + label {
+					padding-left: 5px;
+					font-size: 13px; 
+				}
+				.avail-days, .avail-times {
+				    display: table;
+				    width: 100%;
+				    min-width: 240px;
+				    .col {
+					    width: 50%;
+					    float: left;
+					}
+				}
+				.section-title {
+					color: $blue;
+					font-size: 16px;
+					display: inline-block;
+					width: 100%;
+				}
+
+			}
+
+		}
+		.responsive-content {
+			.results {}
+			.results-pagination {
+
+			}
+
+		}
+
+	}
+}
+
+#RegisterBanner {
+    background-color: $lightpurple;
+    padding-top: 15px;
+    padding-bottom: 65px;
+    position: relative;
+}
+#RegisterBanner .btn {
+    border-radius: 0;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 10px;
+    float: right;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+@media screen and (min-width: 640px){
+    #RegisterBanner {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #RegisterBanner b {
+        display: inline-block;
+        margin-top: 15px;
+    }
+    #RegisterBanner .btn {
+        position: static;
+        border-radius: 0;
+        margin-top: 0;
+        padding: 15px 40px
+    }  
+}
+
+@media screen and (min-width: 768px){
+	.content-block.search-results {
+		.results-header {
+			.title {
+				color: $blue;
+				font-size: 36px;
+			}
+			
+		}
+		
+		.results-body {
+			.fixed-sidebar {
+				.refine-results {
+					position: relative;
+
+					&:after {
+						content: "";
+					    position: absolute;
+					    top: 0;
+					    right: 0;
+					    height: 100%;
+					    width: 10px;
+					    background: -moz-linear-gradient(left, rgba(242,242,242,0) 0%, rgba(191,191,191,0.65) 100%);
+						background: -webkit-linear-gradient(left, rgba(242,242,242,0) 0%,rgba(191,191,191,0.65) 100%);
+						background: linear-gradient(to right, rgba(242,242,242,0) 0%,rgba(191,191,191,0.65) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', endColorstr='#a6bfbfbf',GradientType=1 );
+					}
+					h4 {}
+
+					.form-group {
+					}
+
+					button.btn {}
+					input, select, button {}
+					input + select {}
+					.checkbox > input + label {}
+					.avail-days, .avail-times {
+					    .col {}
+					}
+					.section-title {}
+				}
+
+			}
+			.responsive-content {
+				.results {}
+				.results-pagination {
+
+				}
+
+			}
+
+		}
+	}
+
+}
+
+.results {
+	.results-count {
+		padding-left: 15px;
+	}
+	.results-items {
+		.results-item {
+			padding: 15px;
+		    background-color: #fff;
+		    margin-top: 15px;
+		    margin-bottom: 15px;
+
+		    .clearfix.margin.sidebar-right .responsive-content {
+		    	& > .inner {}
+		    	& + .fixed-sidebar {}
+		    }
+
+		    .result-header {
+		    	.result-title-area {
+		    		.result-title {
+		    			font-family: "Myriad Pro Bold Condensed", sans-serif;
+					    letter-spacing: -1px;
+					    color: #2f4a65;
+					    margin: 0 0 5px 0;
+		    		}
+		    		.result-subtitle {
+		    			color: #7a277a;
+    					margin: 5px 0;
+		    		}
+		    	}
+		    	.posted-by {
+		    		margin-top: 5px;
+				    margin-bottom: 5px;
+				    color: #8e8e8e;
+				}
+		    }
+
+		    .result-body {
+		    	.result-description {}
+		    	.result-meta {
+		    		display: table;
+				    width: 100%;
+				    max-width: 320px;
+				    margin-top: 15px;
+				    margin-bottom: 15px;
+
+		    		.result-meta-item {
+		    			display: inline-block;
+					    float: left;
+					    padding-left: 25px;
+					    padding-right: 7px;
+					    position: relative;
+					    margin-left: 15px;
+
+		    			img {
+		    				position: absolute;
+							top: 0;
+							left: 0;
+		    			}
+		    			&:first-child {
+		    				margin-left: 0;
+		    			}
+		    		}
+		    	}
+		    	.result-heading {
+		    		font-size: 20px;
+    				color: #7a277a;
+    			}
+
+		    	.result-details {
+		    		.result-excerpt {
+		    			a {
+		    				color: #2f4a65;
+		    			}
+		    		}
+		    	}
+
+		    }
+
+		    .result-available-days {
+		    	margin: 15px 0;
+			    padding: 0;
+			    list-style: none;
+			    width: 100%;
+			    max-width: 240px;
+			    display: table;
+
+		    	.avail-days {
+		    		margin: 15px 0;
+					padding: 0;
+					list-style: none;
+					width: 100%;
+					max-width: 240px;
+					display: table;
+
+		    		li {
+		    			display: inline-block;
+					    font-size: 16px;
+					    background: #eee;
+					    border: 1px solid #9a9a9a;
+					    width: 33%;
+					    padding-top: 15px;
+					    padding-bottom: 15px;
+					    text-align: center;
+					    margin-top: -1px;
+					    margin-left: -1px;
+
+					    &.avail {
+					    	background-color: $purple;
+					    	color: #fff;
+					    }
+		    		}
+		    	}
+		    }
+
+		    .btn {
+		    	border-radius: 0;
+    			font-size: 15px;
+		    }
+		}
+	}
+	.results-pagination {
+		margin-left: 15px;
+
+		.pagination {
+			width: 100%;
+		}
+		.pagination > li > a, .pagination > li > span {
+			padding: 10px 18px;
+		}
+	}
+}
+
+@media screen and (min-width: 640px){
+	.results {
+		padding: 15px;
+
+		.results-count {
+		}
+		.results-items {
+			.results-item {
+				position: relative;
+				padding-bottom: 30px;
+
+			    .clearfix.margin.sidebar-right .responsive-content {
+			    	& > .inner {
+						margin-right: 250px;
+						float: left;
+			    	}
+			    	& + .fixed-sidebar {
+		    			width: 250px;
+		    			margin-left: -250px;
+		    			float: right;
+		    		}
+			    }
+
+			    .result-header {
+			    	.result-title-area {
+			    		display: inline-block;
+
+			    		.result-title {
+			    		}
+			    		.result-subtitle {
+			    		}
+			    	}
+			    	.posted-by {
+			    		float: right;
+			    		margin-top: 15px;
+					}
+			    }
+
+			    .result-body {
+			    	.result-description {}
+			    	.result-meta {
+			    		.result-meta-item {
+			    			img {}
+			    			&:first-child {}
+			    		}
+			    	}
+			    	.result-heading {
+
+			    	}
+
+			    	.result-details {
+			    		.result-excerpt {
+			    			a {}
+			    		}
+			    	}
+
+			    }
+
+			    .result-available-days {
+			    	padding-left: 15px;
+
+			    	.result-heading {
+			    		margin-top: 0;
+			    	}
+			    	.avail-days {
+			    		li {}
+			    	}
+			    }
+
+			    .btn {
+			    	position: absolute;
+			    	right: 15px;
+			    	bottom: 15px;
+			    }
+			}
+		}
+		.results-pagination {
+			margin-left: 0;
+			
+			.pagination {}
+			.pagination > li > a, .pagination > li > span {}
+		}
+	}
+	
+}
+
+@media screen and (min-width: 768px){
+	.results {
+
+		.results-count {
+			padding-left: 0;
+		}
+
+		.results-items {
+			.results-item {
+			    .clearfix.margin.sidebar-right .responsive-content {
+			    	& > .inner {
+						margin: 0;
+			    	}
+
+			    	& + .fixed-sidebar {
+		    			width: auto;
+					    float: none;
+					    margin-left: 0;
+		    		}
+			    }
+
+			    .result-header {
+			    	.results-title-area {
+
+			    		.result-title {
+			    		}
+			    		.result-subtitle {
+			    		}
+			    	}
+			    	.posted-by {
+			    		float: none;
+			    		margin-top: 0;
+					}
+			    }
+
+			    .result-body {
+			    	.result-description {}
+			    	.result-meta {
+			    		.result-meta-item {
+			    			img {}
+			    			&:first-child {}
+			    		}
+			    	}
+			    	.result-heading {
+
+			    	}
+
+			    	.result-details {
+			    		.result-excerpt {
+			    			a {}
+			    		}
+			    	}
+
+			    }
+
+			    .result-available-days {
+			    	padding-left: 0;
+
+			    	.result-heading {
+			    		margin-top: 15px;
+			    	}
+			    	.avail-days {
+			    		li {}
+			    	}
+			    }
+
+			    .btn {
+			    }
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 900px){
+	.results {
+		.results-count {}
+
+		.results-items {
+			.results-item {
+				position: relative;
+				padding-bottom: 30px;
+
+			    .clearfix.margin.sidebar-right .responsive-content {
+			    	& > .inner {
+						margin-right: 250px;
+			    	}
+			    	& + .fixed-sidebar {
+		    			width: 250px;
+		    			margin-left: -250px;
+		    			float: right;
+		    		}
+			    }
+
+			    .result-header {
+			    	.result-title-area {
+			    		display: inline-block;
+
+			    		.result-title {
+			    		}
+			    		.result-subtitle {
+			    		}
+			    	}
+			    	.posted-by {
+			    		float: right;
+			    		margin-top: 15px;
+					}
+			    }
+
+			    .result-body {
+			    	.result-description {}
+			    	.result-meta {
+			    		.result-meta-item {
+			    			img {}
+			    			&:first-child {}
+			    		}
+			    	}
+			    	.result-heading {
+
+			    	}
+
+			    	.result-details {
+			    		.result-excerpt {
+			    			a {}
+			    		}
+			    	}
+
+			    }
+
+			    .result-available-days {
+			    	padding-left: 15px;
+
+			    	.result-heading {
+			    		margin-top: 0;
+			    	}
+			    	.avail-days {
+			    		li {}
+			    	}
+			    }
+
+			    .btn {
+			    	position: absolute;
+			    	right: 15px;
+			    	bottom: 15px;
+			    }
+			}
+		}
+	}
+}
+
+/*
+.results {
+}
+
+.results-count {
+	padding-left: 15px;
+}
+
+.results-items {
+}
+
+.results-item {
+    padding: 15px;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.results-item .clearfix.margin.sidebar-right .responsive-content {
+}
+
+.results-item .clearfix.margin.sidebar-right .responsive-content > .inner {
+}
+
+.results-item .clearfix.margin.sidebar-right .responsive-content + .fixed-sidebar {
+}
+
+.results-item .result-header .result-title-area {
+}
+
+.results-item .result-header .result-title-area .result-title {
+    font-family: Myriad Pro Bold Condensed, sans-serif;
+    letter-spacing: -1px;
+    color: #2f4a65;
+    margin: 0 0 5px 0;
+}
+
+.results-item .result-header .result-title-area .result-subtitle {
+    color: #7a277a;
+    margin: 5px 0;
+}
+
+.results-item .result-header .posted-by {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #8e8e8e;
+}
+
+.results-item .result-header {
+}
+
+.results-item .result-body {
+}
+
+.results-item .result-body .result-description {
+}
+
+.results-item .result-body .result-meta {
+    display: table;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.results-item .result-body .result-meta .result-meta-item {
+    display: inline-block;
+    float: left;
+    padding-left: 25px;
+    padding-right: 7px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.results-item .result-body .result-meta .result-meta-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.results-item .result-body .result-meta .result-meta-item:first-child {
+    margin-left: 0;
+}
+
+.results-item .result-body .result-details {
+}
+
+.results-item .result-body .result-heading {
+    font-size: 20px;
+    color: #7a277a;
+}
+
+.results-item .result-body .result-details .result-excerpt {
+}
+
+.results-item .result-body .result-details .result-excerpt a {
+    color: #2f4a65;
+}
+
+.results-item .result-available-days {
+}
+
+.results-item .result-available-days .avail-days {
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 240px;
+    display: table;
+}
+
+.results-item .result-available-days .avail-days li {
+    display: inline-block;
+    font-size: 16px;
+    background: #eee;
+    border: 1px solid #9a9a9a;
+    width: 33%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.results-item .btn {
+    border-radius: 0;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 640px) {
+    .results {
+        padding: 15px;
+    }
+
+    .results-count {
+    }
+
+    .results-items {
+    }
+
+    .results-item {
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content {
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content > .inner {
+        margin-right: 250px;
+        float: left;
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content + .fixed-sidebar {
+        width: 250px;
+        margin-left: -250px;
+        float: right;
+    }
+
+    .results-item .result-header {
+    }
+
+    .results-item .result-header .result-title-area {
+        display: inline-block;
+    }
+
+    .results-item .result-header .result-title-area .result-title {
+    }
+
+    .results-item .result-header .result-title-area .result-subtitle {
+    }
+
+    .results-item .result-header .posted-by {
+        float: right;
+        margin-top: 15px;
+    }
+
+    .results-item .result-body {
+    }
+
+    .results-item .result-body .result-description {
+    }
+
+    .results-item .result-body .result-meta {
+    }
+
+    .results-item .result-body .result-meta .result-meta-item {
+    }
+
+    .results-item .result-body .result-meta .result-meta-item img {
+    }
+
+    .results-item .result-body .result-details {
+    }
+
+    .results-item .result-body .result-details .result-heading {
+    }
+
+    .results-item .result-body .result-details .result-excerpt {
+    }
+
+    .results-item .result-body .result-details .result-excerpt a {
+    }
+
+    .results-item .result-available-days {
+        padding-left: 15px;
+    }
+
+    .results-item .result-available-days .result-heading {
+        margin-top: 0;
+    }
+
+    .results-item .result-available-days .avail-days {
+    }
+
+    .results-item .result-available-days .avail-days li {
+    }
+
+    .results-item .btn {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .results {
+        padding: 15px;
+    }
+
+    .results-count {
+    	padding-left: 0;
+    }
+
+    .results-items {
+    }
+
+    .results-item {
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content {
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content > .inner {
+        margin: 0;
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content + .fixed-sidebar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .results-item .result-header {
+    }
+
+    .results-item .result-header .result-title-area {
+    }
+
+    .results-item .result-header .result-title-area .result-title {
+    }
+
+    .results-item .result-header .result-title-area .result-subtitle {
+    }
+
+    .results-item .result-header .posted-by {
+        float: none;
+        margin-top: 0;
+    }
+
+    .results-item .result-body {
+    }
+
+    .results-item .result-body .result-description {
+    }
+
+    .results-item .result-body .result-meta {
+    }
+
+    .results-item .result-body .result-meta .result-meta-item {
+    }
+
+    .results-item .result-body .result-meta .result-meta-item img {
+    }
+
+    .results-item .result-body .result-details {
+    }
+
+    .results-item .result-body .result-details .result-heading {
+    }
+
+    .results-item .result-body .result-details .result-excerpt {
+    }
+
+    .results-item .result-body .result-details .result-excerpt a {
+    }
+
+    .results-item .result-available-days {
+        padding-left: 0;
+    }
+
+    .results-item .result-available-days .result-heading {
+        margin-top: 15px;
+    }
+
+    .results-item .result-available-days .avail-days {
+    }
+
+    .results-item .result-available-days .avail-days li {
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .results {
+        padding: 15px;
+    }
+
+    .results-count {
+    }
+
+    .results-items {
+    }
+
+    .results-item {
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content {
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content > .inner {
+        margin-right: 250px;
+    }
+
+    .results-item .clearfix.margin.sidebar-right .responsive-content + .fixed-sidebar {
+        width: 250px;
+        margin-left: -250px;
+    }
+
+    .results-item .result-header {
+    }
+
+    .results-item .result-header .result-title-area {
+        display: inline-block;
+    }
+
+    .results-item .result-header .result-title-area .result-title {
+    }
+
+    .results-item .result-header .result-title-area .result-subtitle {
+    }
+
+    .results-item .result-header .posted-by {
+        float: right;
+        margin-top: 15px;
+    }
+
+    .results-item .result-body {
+    }
+
+    .results-item .result-body .result-description {
+    }
+
+    .results-item .result-body .result-meta {
+    }
+
+    .results-item .result-body .result-meta .result-meta-item {
+    }
+
+    .results-item .result-body .result-meta .result-meta-item img {
+    }
+
+    .results-item .result-body .result-details {
+    }
+
+    .results-item .result-body .result-details .result-heading {
+    }
+
+    .results-item .result-body .result-details .result-excerpt {
+    }
+
+    .results-item .result-body .result-details .result-excerpt a {
+    }
+
+    .results-item .result-available-days {
+        padding-left: 15px;
+    }
+
+    .results-item .result-available-days .result-heading {
+        margin-top: 0;
+    }
+
+    .results-item .result-available-days .avail-days {
+    }
+
+    .results-item .result-available-days .avail-days li {
+    }
+
+    .results-item .btn {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+ */

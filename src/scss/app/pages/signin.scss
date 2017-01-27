@@ -1,0 +1,65 @@
+.content-block.signin-area {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+.content-block.signin-area form {
+    max-width: 430px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+.content-block.signin-area form section {
+}
+.content-block.signin-area form section > .inner{
+    min-height: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content-block.signin-area .form-header h1 {
+    font-family: Myriad Pro Bold Condensed, sans-serif;
+    letter-spacing: -1px;
+    font-size: 48px;
+    margin: 10px 0 0 0 ;
+}
+.content-block.signin-area .form-body,
+.content-block.signin-area .form-footer {
+    position: relative;
+    @include boxshadow-inset-top();
+}
+.content-block.signin-area .form-body .errors {
+    color: #a94442; // text-danger ???
+    margin-bottom: 10px;
+}
+
+.content-block.signin-area .form-body input {
+    border-radius: 0;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    padding: 16px 12px;
+}
+.content-block.signin-area .form-body .btn {
+    border-radius: 0;
+    padding: 10px 20px;
+    margin-right: 10px  
+}
+.content-block.signin-area .form-body label {
+    padding-left: 10px; 
+}
+.content-block.signin-area .form-body table{
+    width: 100%;
+}
+.content-block.signin-area .form-body table tr:first-child td a {
+    letter-spacing: -1px;
+    @include myriad-pro(24px);
+}
+.content-block.signin-area .form-body .checkbox {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+@media screen and (min-width: 768px){
+    .content-block.signin-area {
+        padding: 40px 0px;
+    }
+    
+}

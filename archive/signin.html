@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sign In | Find a Carer</title>
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i" rel="stylesheet">
+		<link rel="canonical" href="/" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style type="text/css">
+			@font-face {
+			    font-family: Myriad Pro Bold Condensed;
+			    src: url("src/fonts/MyriadPro-BoldCond.otf") format("opentype");
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css" />
+		<link rel="stylesheet" href="dist/css/style.css" type="text/css" />
+	</head>
+	<body class="site page page-signin">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    <header class="site-header">
+		        <div class="inner">
+
+                    <nav class="navbar navbar-default">
+                        <div class="container container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                    <img src="src/img/logo.png" alt="Find A Carer logo">
+                                </a>
+                            </div>
+                            
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Sign In</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Carer <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="carer/dashboard.html">Dashboard</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Seeker <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav> <!-- end .navbar -->
+
+		        </div>
+		    </header>
+		    
+		    <div class="site-content">
+		        <div class="inner">
+		            
+		            
+		            <div class="content-block signin-area" style="background:url(src/img/background-images/bg1.jpg);">
+		            	
+		            	<form role="form">
+		            		<section class="form-header">
+		            			<div class="inner">
+		            				<h1 class="text-purple text-condensed">SIGN IN</h1>
+		            			</div>
+		            		</section>
+		            		<section class="form-body">
+		            			<div class="inner">
+		            				<div class="errors">
+		            					Username/Password is incorrect
+		            				</div>
+		            				<div class="input">
+		            					<input type="email" class="form-control input-sm" name="email" placeholder="Email Address">
+		            					<input type="password" class="form-control input-sm" name="password" placeholder="Password">
+		            					<span class="checkbox checkbox-success checkbox-circle">
+			                                <input type="checkbox" name="remember-me" id="remember-me" class="checkbox">
+			                                <label for="remember-me">Remember Me</label>
+			                            </span>
+		            				</div>
+		            				<div class="links">
+		            					<table>
+		            						<tr>
+		            							<td>
+		            								<button type="submit" class="btn btn-primary btn-lg">
+		            									<i class="fa fa-signin"></i>SIGN IN
+		            								</button>
+		            							</td>
+		            							<td>Or</td>
+		            							<td class="text-center valign-top">
+			                                        <b>Register as a</b><br>
+			                                        <h4><a href="#">SEEKER</a>&nbsp;|&nbsp;<a href="#">CARER</a></h4>
+			                                    </td>
+		            						</tr>
+		            						<tr>
+		            							<td colspan="3">
+		            								<a href="#">Forgot Password</a>
+		            							</td>
+		            						</tr>
+		            					</table>
+		            				</div>
+		            			</div>
+		            		</section>
+		            		<section class="form-footer">
+		            			<div class="inner">
+			                        <p>
+			                            Need to acitvate your account?<br>
+			                            <b>Have an activation code to enter to activate your membership?</b> Enter it on the <a href="#">Activate</a> page.
+			                        </p>
+			                        <p>
+			                            <b>Need your code again</b><br>
+			                            Request it again on the <a href="#">Resend Activate</a> page.
+			                        </p>
+			                    </div>
+		            		</section>
+		            	</form>
+		            	
+		            </div>
+		            
+		            
+		        </div>
+		    </div>
+		    
+		    <footer class="site-footer">
+		        <div class="inner">
+		            
+		            <div class="container">
+		                <div class="row">
+		                	
+		                	<div class="content-block footer-navigation">
+		                		<nav>
+		                			<ul>
+		                				<li><a href="#">ABOUT US</a></li>
+		                				<li class="active"><a href="#">TIPS & RESOURCES</a></li>
+		                				<li><a href="#">SUCCESS STORIES</a></li>
+		                				<li><a href="#">CONTACT US</a></li>
+		                			</ul>
+		                		</nav>
+		                	</div>
+		                    
+                            <div class="content-block sitemap col-xs-12">
+		                        <h4>SITE MAP</h4>
+								<div class="row">
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Aged Care in Your Capital City: </b><br>
+										<ul class="no-padding">
+											<li><a href="#">Aged Care in Sydney (NSW)</a></li>
+											<li><a href="#">Aged Care in Melbourne (VIC)</a></li>
+											<li><a href="#">Aged Care in Brisbane (QLD)</a></li>
+											<li><a href="#">Aged Care in Perth (WA)</a></li>
+											<li><a href="#">Aged Care in Canberra (ACT)</a></li>
+											<li><a href="#">Aged Care in Adelaide (SA)</a></li>
+											<li><a href="#">Aged Care in Darwin (NT)</a></li>
+											<li><a href="#">Aged Care in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Disability Care in Your Capital City: </b><br>
+										<ul class="no-padding">
+											<li><a href="#">Disability Care in Sydney (NSW)</a></li>
+											<li><a href="#">Disability Care in Melbourne (VIC)</a></li>
+											<li><a href="#">Disability Care in Brisbane (QLD)</a></li>
+											<li><a href="#">Disability Care in Perth (WA)</a></li>
+											<li><a href="#">Disability Care in Canberra (ACT)</a></li>
+											<li><a href="#">Disability Care in Adelaide (SA)</a></li>
+											<li><a href="#">Disability Care in Darwin (NT)</a></li>
+											<li><a href="#">Disability Care in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Special Needs Child Care in Your Capital City: </b><br>
+										<ul>
+											<li><a href="#">Special Needs Child Care in Sydney (NSW)</a></li>
+											<li><a href="#">Special Needs Child Care in Melbourne (VIC)</a></li>
+											<li><a href="#">Special Needs Child Care in Brisbane (QLD)</a></li>
+											<li><a href="#">Special Needs Child Care in Perth (WA)</a></li>
+											<li><a href="#">Special Needs Child Care in Canberra (ACT)</a></li>
+											<li><a href="#">Special Needs Child Care in Adelaide (SA)</a></li>
+											<li><a href="#">Special Needs Child Care in Darwin (NT)</a></li>
+											<li><a href="#">Special Needs Child Care in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-sm-3 sitemap-block">
+										<b>Find Care Jobs in Your Capital City: </b><br>
+										<ul class="no-padding">
+											<li><a href="#">Care Jobs in Sydney (NSW)</a></li>
+											<li><a href="#">Care Jobs in Melbourne (VIC)</a></li>
+											<li><a href="#">Care Jobs in Brisbane (QLD)</a></li>
+											<li><a href="#">Care Jobs in Perth (WA)</a></li>
+											<li><a href="#">Care Jobs in Canberra (ACT)</a></li>
+											<li><a href="#">Care Jobs in Adelaide (SA)</a></li>
+											<li><a href="#">Care Jobs in Darwin (NT)</a></li>
+											<li><a href="#">Care Jobs in Hobart (TAS)</a></li>
+										</ul>
+									</div>
+								</div>
+                    </div> <!--end .content-block.sitemap-->
+
+                        </div> <!--end .row -->
+		            </div>
+		        </div>
+		    </footer>
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

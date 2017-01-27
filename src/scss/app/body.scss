@@ -1,0 +1,43 @@
+// body classes and .site-content css goes here
+
+body {
+    &.site {
+        
+    }
+    &.page {
+        
+    }
+}
+
+.site-content {
+    min-height: 300px;
+    & > .inner {
+        min-height: 300px;
+    }
+}
+
+.admin-body {
+    margin-top: 20px;
+    background-color: $lightgrey;
+}
+
+
+@media screen and (min-width: 768px){
+    .admin {
+        .site-content {
+            .container {
+                & > .row {
+                    margin-top: 20px;
+                    .responsive-content {
+                        background-color: $lightgrey;
+                    }
+                }
+            }
+        }
+    }
+    .admin-body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}

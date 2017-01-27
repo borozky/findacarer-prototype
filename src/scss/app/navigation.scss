@@ -1,0 +1,29 @@
+nav {
+    & > ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-left: -4px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+                display: inline-block;
+            }
+        }
+    }
+}
+ul.list-style-check {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul.list-style-check li {
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.8;
+    background: url(../../src/img/checkmark.png) 0px 6px no-repeat;
+}

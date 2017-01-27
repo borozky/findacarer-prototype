@@ -1,0 +1,85 @@
+.content-block.register {
+	background-color: $lightgrey;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+
+	.register-header {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-botttom: 15px;
+		border-bottom: 1px solid #f2f2f2;
+
+		a {
+			text-decoration: underline;
+		}
+		h1 {
+			@include myriad-pro(36px);
+		}
+		p {
+			.description {
+				display: inline-block;
+				font-weight: normal;
+				width: 100%;
+			}
+			.instead {
+				display: inline-block;
+				margin-top: 15px;
+				font-weight: bold;
+				width: 100%;
+			}
+		}
+	}
+
+	.register-body {
+		font-family: Arial, Helvetica, sans-serif;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: white;
+
+		.register-inputgroup {
+			padding-left: 0;
+			padding-right: 0;
+
+			label {
+				margin-bottom: 0;
+			}
+
+			input.form-control, select.form-control {
+				margin-bottom: 15px;
+				@include border-radius(0);
+			}
+		}
+		.register-sidebar {
+
+		}
+	}
+
+	button.btn {
+		@include border-radius(0);
+		font-family: Ubuntu, sans-serif;
+	}
+
+	.registration-errors {
+		color: #a94442;
+		padding: 15px;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	
+}
+@media screen and (min-width: 768px){
+	.content-block.register {
+		padding: 15px;
+
+		.register-header {}
+		.register-body {
+			.register-inputgroup {}
+		}
+	}
+}

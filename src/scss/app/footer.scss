@@ -1,0 +1,111 @@
+.site-footer {
+    
+    .content-block {
+        
+    }
+    .sitemap {
+        background-color: $lightgrey;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                line-height: 1.2;
+                a {
+                    font-size: 12px;
+                    
+                }
+            }
+        }
+        
+        &-block {
+            margin-bottom: 1em;
+        }
+        
+    }
+    
+    .footer-navigation {
+        li {
+            margin-left: 0;
+            width: 100%;
+            &:first-child {
+                margin-left: 0;
+            }
+            &.active {
+                a {
+                    background-color: $green;
+                    color: #fff;
+                }
+            }
+            
+        }
+        a {
+            padding: 12px 24px;
+            font-size: 15px;
+            display: block;
+            &.active {
+                color: #fff;
+                background-color: $green;
+            }
+            &:hover {
+                background-color: $green;
+                color: #fff;
+                text-decoration: none;
+            }
+        }  
+        
+    }
+}
+@media screen and (min-width: 481px){
+    .site-footer {
+        .footer-navigation {
+            li {
+                width: 50%;
+                float: left;
+                a {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .site-footer {
+        .footer-navigation {
+            li {
+                margin-left: -4px;
+                width: auto;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &.active {
+                    a {
+                        background-color: $green;
+                        color: #fff;
+                    }
+                }
+                
+            }
+            a {
+                padding: 12px 24px;
+                font-size: 15px;
+                display: block;
+                &.active {
+                    color: #fff;
+                    background-color: $green;
+                }
+                &:hover {
+                    background-color: $green;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }  
+            
+        }
+    }
+    
+}

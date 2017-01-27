@@ -1,0 +1,376 @@
+.sprite {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    border-radius: 100%;
+    position: relative;
+}
+.sprite:after {
+    content: "";
+    background: url('../../src/img/sprite-profile-v1.png') 0 0;
+    background-repeat: no-repeat;
+    background-size: 678px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sprite.elder {
+    border-color: #e8b391;
+}
+.sprite.elder:after {
+    background-position: 13px 0px;
+    width: 23px;
+    height: 30px;
+    background-size: 678px;
+    top: 4px;
+}
+.sprite.australia {
+    border-color: #6380ad;
+}
+.sprite.australia:after {
+    background-position: -7px 0px;
+    width: 25px;
+    height: 21px;
+    background-size: 474px;
+    top: 7px;
+    left: 4px;
+}
+.sprite.car {
+    border-color: #b99597;
+}
+.sprite.car:after {
+    background-position: -35px 0px;
+    width: 24px;
+    height: 18px;
+    background-size: 534px;
+    top: 8px;
+    left: 5px;
+}
+.sprite.no-smoking {
+    border-color: #b82f3c;
+}
+.sprite.no-smoking:after {
+    background-position: -106px 1px;
+    width: 40px;
+    height: 42px;
+    background-size: 941px;
+    top: -4px;
+    left: -3px;
+}
+.sprite.baby {
+    border-color: #e8d18c;
+}
+.sprite.baby:after {
+    background-position: -85px 0px;
+    width: 17px;
+    height: 24px;
+    background-size: 541px;
+    top: 5px;
+    left: 9px;
+}
+.sprite.document {
+    border-color: #61a8f3;
+}
+.sprite.document:after {
+    background-position: -106px 0px;
+    width: 17px;
+    height: 21px;
+    background-size: 561px;
+    top: 7px;
+    left: 9px;
+}
+.sprite.dog {
+    border-color: #928989;
+}
+.sprite.dog:after {
+    background-position: -125px 0px;
+    width: 23px;
+    height: 17px;
+    background-size: 569px;
+    top: 9px;
+    left: 6px;
+}
+.sprite.trophy {
+    border-color: #6cf593;
+}
+.sprite.trophy:after {
+    background-position: -136px 0px;
+    width: 20px;
+    height: 22px;
+    background-size: 524px;
+    top: 7px;
+    left: 7px;
+}
+.sprite.crown {
+    border-color: #65e48b;
+}
+.sprite.crown:after {
+    background-position: -145px 0px;
+    width: 26px;
+    height: 21px;
+    background-size: 487px;
+    top: 6px;
+    left: 4px;
+}
+.sprite.speed {
+    border: none;
+}
+.sprite.speed:after {
+    background-position: -312px 1px;
+    width: 40px;
+    height: 40px;
+    background-size: 878px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.sprite.chef {
+    border-color: #ffc8ff;
+}
+.sprite.chef:after {
+    background-position: -208px 0px;
+    width: 21px;
+    height: 22px;
+    background-size: 517px;
+    top: 6px;
+    left: 7px;
+}
+.sprite.first-aid {
+    border-color: #f2787f;
+}
+.sprite.first-aid:after {
+    background-position: -229px 0px;
+    width: 22px;
+    height: 22px;
+    background-size: 517px;
+    top: 6px;
+    left: 6px;
+}
+.sprite.smoking-slashed {}
+.sprite.smoking-slashed:after {
+    background-position: -251px 0px;
+    width: 23px;
+    height: 19px;
+    background-size: 516px;
+    top: 7px;
+    left: 6px;
+}
+.sprite.abn {
+    border-color: #e6baf1;
+}
+.sprite.abn:after {
+    background-position: -275px 0px;
+    width: 30px;
+    height: 13px;
+    background-size: 518px;
+    top: 10px;
+    left: 2px;
+}
+
+.sprite.plus-2 {
+    border-color: #8499ff;
+}
+.sprite.plus-2:after {
+    background-position: -305px 0px;
+    width: 26px;
+    height: 19px;
+    background-size: 517px;
+    top: 7px;
+    left: 3px;
+}
+.sprite.card {
+    border-color: #83bfea;
+}
+.sprite.card:after {
+    background-position: -323px 0px;
+    width: 21px;
+    height: 19px;
+    background-size: 462px;
+    top: 7px;
+    left: 7px;
+}
+.sprite.cleaning {
+    border-color: #fbdc8c;
+}
+.sprite.cleaning:after {
+    background-position: -385px 0px;
+    width: 19px;
+    height: 21px;
+    background-size: 518px;
+    top: 7px;
+    left: 8px;
+}
+.sprite.night {
+    border-color: #a3aefd;
+}
+.sprite.night:after {
+    background-position: -380px 0px;
+    width: 28px;
+    height: 19px;
+    background-size: 487px;
+    top: 7px;
+    left: 3px;
+}
+.sprite.disabled {
+    border-color: #86a6ea;
+}
+.sprite.disabled:after {
+    background-position: -521px 0px;
+    width: 22px;
+    height: 25px;
+    background-size: 621px;
+    top: 4px;
+    left: 7px;
+}
+.sprite.home {
+    border-color: #f4a1a6;
+}
+.sprite.home:after {
+    background-position: -452px 0px;
+    width: 24px;
+    height: 23px;
+    background-size: 517px;
+    top: 5px;
+    left: 5px;
+}
+.sprite.graduate {
+    border-color: #97ead7;
+}
+.sprite.graduate:after {
+    background-position: -285px 0px;
+    width: 26px;
+    height: 16px;
+    background-size: 445px;
+    top: 10px;
+    left: 4px;
+}
+.sprite.children {
+    border-color: #ffcfae;
+}
+.sprite.children:after {
+    background-position: -494px 0px;
+    width: 25px;
+    height: 22px;
+    background-size: 536px;
+    top: 6px;
+    left: 5px;
+}
+.sprite.police {
+    border-color: #85a3e5;
+}
+.sprite.police:after {
+    background-position: -525px 0px;
+    width: 18px;
+    height: 22px;
+    background-size: 543px;
+    top: 7px;
+    left: 8px;
+}
+
+
+.sprite.grey {
+    border-color: #ddd;
+}
+.sprite.grey:after {background-position-y: -23px;}
+.sprite.grey.elder {}
+.sprite.grey.elder:after {
+    background-position-y: -31px;
+}
+
+.sprite.grey.australia {}
+.sprite.grey.australia:after {
+    background-position-y: -21px;
+}
+
+.sprite.grey.car {}
+.sprite.grey.car:after {}
+
+.sprite.grey.no-smoking {}
+.sprite.grey.no-smoking:after {
+    background-position-y: -41px;
+}
+
+.sprite.grey.baby {}
+.sprite.grey.baby:after {
+    background-position-y: -24px;
+}
+
+.sprite.grey.document {}
+.sprite.grey.document:after {
+    background-position-y: -25px;
+}
+
+.sprite.grey.dog {}
+.sprite.grey.dog:after {
+    background-position-y: -25px;
+}
+
+.sprite.grey.trophy {}
+.sprite.grey.trophy:after {}
+
+.sprite.grey.crown {}
+.sprite.grey.crown:after {
+    background-position-y: -22px;
+}
+
+.sprite.grey.speed {}
+.sprite.grey.speed:after {
+    background-position-y: -39px;
+}
+
+.sprite.grey.chef {
+}
+.sprite.grey.chef:after {
+    background-position-y: -23px;
+}
+
+.sprite.grey.first-aid {}
+.sprite.grey.first-aid:after {}
+
+.sprite.grey.smoking-slashed {}
+.sprite.grey.smoking-slashed:after {}
+
+.sprite.grey.abn {}
+.sprite.grey.abn:after {}
+
+.sprite.grey.plus-2 {}
+.sprite.grey.plus-2:after {}
+
+.sprite.grey.card {}
+.sprite.grey.card:after {
+    background-position-y: -20px;
+}
+
+.sprite.grey.cleaning {}
+.sprite.grey.cleaning:after {}
+
+.sprite.grey.night {}
+.sprite.grey.night:after {
+    background-position-y: -22px;
+}
+
+.sprite.grey.disabled {}
+.sprite.grey.disabled:after {
+    background-position-y: -27px;
+}
+
+.sprite.grey.home {}
+.sprite.grey.home:after {}
+
+.sprite.grey.graduate {}
+.sprite.grey.graduate:after {
+    background-position-y: -20px;
+}
+
+.sprite.grey.children {}
+.sprite.grey.children:after {}
+
+.sprite.grey.police {}
+.sprite.grey.police:after {
+    background-position-y: -25px;
+}

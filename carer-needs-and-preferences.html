@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+<title>Needs and Preferences | Find a Carer</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i" rel="stylesheet">
+<link rel="canonical" href="/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style type="text/css">
+	@font-face {
+	    font-family: Myriad Pro Bold Condensed;
+	    src: url("src/fonts/MyriadPro-BoldCond.otf") format("opentype");
+	}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="dist/css/bootstrap-custom.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/0.3.7/awesome-bootstrap-checkbox.min.css" />
+<link rel="stylesheet" href="dist/css/style.css" type="text/css" />
+
+	</head>
+	<body class="admin admin-carer carer-needs-and-preferences">
+		
+		<div class="site-wrapper sticky-footer-parent">
+		    
+		    <header class="site-header">
+    <div class="inner">
+
+        <nav class="navbar navbar-default">
+            <div class="container container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="src/img/logo.png" alt="Find A Carer logo">
+                    </a>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="carer-search.html">Carer Search</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Carer/Seeker <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="baseline-carer.html">Baseline Carer</a></li>
+                                <li><a href="carer-dashboard.html">Dashboard</a></li>
+                                <li><a href="carer-needs-and-preferences.html">Needs and Preferences</a></li>
+                                <li><a href="carer-availability.html">Availability</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="baseline-seeker.html">Baseline Seeker</a></li>
+                                <li><a href="seeker-dashboard.html">Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Pages<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="register-seeker.html">Seeker Registration</a></li>
+                                <li><a href="search-results.html">Search Results</a></li>
+                                <li><a href="full-profile.html">Profile</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="signin.html">Sign Out</a></li>
+                        
+                        
+                    </ul>
+                    
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav> <!-- end .navbar -->
+
+    </div>
+</header>
+		    
+		    <div class="site-content">
+		        <div class="inner">
+
+		            <div class="container">
+		                <div class="row clearfix sidebar-right calc admin-body">
+		                	
+		                	
+		                    <div class="fixed-sidebar">
+		                        <div class="col-xs-12">
+		                            <div class="list-group">
+                                        <a href="#" class="list-group-item">1. Your Profile
+                                            <span class="badge"><i class="fa fa-check"></i></span>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-info active">2. Bio & Preferences
+                                        </a>
+                                        <a href="#" class="list-group-item">3. Experience
+                                        </a>
+                                        <a href="#" class="list-group-item">4. Availability
+                                        </a>
+                                        <a href="#" class="list-group-item">5. Your photo
+                                        </a>
+                                        
+                                    </div>
+		                        </div>
+		                    </div>
+		                    
+		                    <div class="col-xs-12" style="float:none;display:block;clear:none;">
+		                    		<h1 class="text-blue">TELL US YOUR NEEDS AND PREFERENCES</h1>
+	                                <b>It will only a few minutes & allow us to match you with the most relevant carers in your area</b><br>
+	                                <a href="#" class="NeedsAndPreference_Skip">>> Skip for now</a>
+                            </div>
+		                    
+		                    <main class="responsive-content clearfix">
+		                        <div class="inner">
+		                            <form role="form" class="content-block needs-and-preferences">
+		                                <div class="col-xs-12">
+		                                    
+		                                    <!--job title and description-->
+		                                    <div class="form-group clearfix">
+		                                        <h3 class="text-blue">Job title & description</h3>
+		                                        <div class="row clearfix">
+		                                            <div class="col-xs-12">
+    		                                            <div class="row clearfix">
+    		                                                <p class="col-xs-12 col-sm-6">
+        		                                                <label for="NeedsAndPreference-title"> Title<span class="required">*</span></label>
+                                                                <input type="text" id="NeedsAndPreference-title" name="needsandpreference-title" class="form-control input-sm">
+        		                                            </p>
+        		                                            <p class="col-xs-12 col-sm-6">
+        		                                                <small class="tip">In a few words summarise your needs eg. "Autistic child carer is required in the Geelong area"</small>
+                                                            </p>
+    		                                            </div>
+    		                                        </div>
+    		                                        <div class="col-xs-12">
+    		                                            <div class="row clearfix">
+    		                                                <p class="col-xs-12 col-sm-6">
+        		                                                <label for="NeedsAndPreference-title"> Description<span class="required">*</span></label>
+                                                                <textarea name="needsandpreference-description" class="form-control input-sm" id="NeedsAndPreference-description" cols="30" rows="5"></textarea>
+        		                                            </p>
+        		                                            <p class="col-xs-12 col-sm-6">
+        		                                                <small class="tip">This is where you can expand our or your loved one's needs to specific requirements, additional duties or any other detail.</small>
+        		                                                <small class="tip">Please aim to have no more than 2 small paragraphs for best results.</small>
+        		                                                
+                                                            </p>
+    		                                            </div>
+    		                                        </div>
+		                                        </div>
+		                                        
+		                                    </div>
+		                                    
+		                                    
+		                                    <div class="form-group clearfix">
+		                                    	<h3 class="text-blue">Your preferences</h3>
+		                                    	<div class="row clearfix">
+		                                    		<div class="col-xs-12">
+		                                    			<div class="row clearfix">
+		                                    				<div class="col-xs-12 col-sm-7">
+		                                    					<table class="table">
+		                                    						<tr>
+		                                    							<td>I prefer a (choose gender)</td>
+		                                    							<td>
+		                                    								<select class="form-control input-xs" name="needsandpreference-preferred_gender" id="NeedsAndPreference-PreferredGender">
+			                                    								<option value="any">Any</option>
+			                                    								<option value="m">Male</option>
+			                                    								<option value="f">Female</option>
+			                                    							</select>
+		                                    							</td>
+		                                    						</tr>
+		                                    						<tr>
+		                                    							<td>
+		                                    								(Hourly) Rate I am willing to pay<span class="required"></span>
+		                                    							</td>
+		                                    							<td>
+		                                    								<input type="tel" name="needsandpreference-hourly_rate" class="form-control input-sm">
+		                                    							</td>
+		                                    						</tr>
+		                                    						<tr>
+		                                    							<td>Maximun age of Carer (in years)</td>
+		                                    							<td>
+		                                    								<input type="tel" name="needsandpreference-max_age_years" class="form-control input-sm" value="18"/>
+		                                    							</td>
+		                                    						</tr>
+		                                    						<tr>
+		                                    							<td>hould the carer know First Aid?</td>
+		                                    							<td>
+		                                    								<span class="abc-radio" style="padding-left: 5px;">
+							                                                    <span class="abc-radio-success">
+		                                    										<input type="radio" name="needsandpreference-know_first_aid" id="NeedsAndPreference-know_first_aid_yes" value="yes">
+		                                    										<label for="NeedsAndPreference-know_first_aid_yes">Yes</label>
+		                                    									</span>&nbsp;&nbsp;
+							                                                    <span class="abc-radio-danger">
+		                                    										<input type="radio" name="needsandpreference-know_first_aid" id="NeedsAndPreference-know_first_aid_no" value="no" checked="checked">
+		                                    										<label for="NeedsAndPreference-know_first_aid_no">No</label>
+		                                    									</span>
+							                                                </span>
+		                                    							</td>
+		                                    						</tr>
+		                                    					</table>	
+		                                    				</div>
+		                                    				<div class="col-xs-12 col-sm-5">
+		                                    					<b>What other language do you speak?</b><br>
+		                                    					<small><i>Use <code>ctrl+click</code> to select multiple items</i></small>
+		                                    					<select multiple="multiple" size="10" class="form-control" name="needsandpreference-other_language" id="NeedsAndPreference-know_first_aid_no">
+		                                    						<option value="arabic">Arabic</option>
+		                                    						<option value="chinese">Chinese</option>
+		                                    						<option value="czech">Czech</option>
+		                                    						<option value="danish">Danish</option>
+		                                    						<option value="filipino">Filipino</option>
+		                                    					</select>
+		                                    				</div>
+		                                    			</div>
+		                                    		</div>
+		                                    	</div>
+		                                    </div>
+		                                    
+		                                    
+		                                    <div class="form-group clearfix" id="Qualification_Requirements">
+		                                    	<h3 class="text-blue">Qualification Requirements</h3>
+		                                    	<div class="row clearfix">
+		                                    		<div class="col-xs-12">
+		                                    			<b>What type(s) of Care do you require?</b>
+		                                    			<div class="row">
+		                                    				<div id="NeedsAndPreferences_CareTypes">
+		                                    					<div class="CareTypes_Item">
+		                                    						<label for="NeedsAndPreferences_AgedCare">
+			                                    						<span class="CareTypes_Item_Header">
+			                                    							<img src="../src/img/care-types/aged-care.png" alt="Aged Care">
+			                                    						</span>
+			                                    						<span class="CareTypes_Item_Footer">
+			                                    							<span>
+			                                    								<input type="checkbox" name="needsandpreference-caretypes" id="NeedsAndPreferences_AgedCare" value="aged-care">Aged Care
+			                                    							</span>
+			                                    						</span>
+		                                    						</label>
+		                                    					</div>
+		                                    					<div class="CareTypes_Item">
+		                                    						<label for="NeedsAndPreferences_DisabilityCare">
+			                                    						<span class="CareTypes_Item_Header">
+			                                    							<img src="../src/img/care-types/disability-care.png" alt="Aged Care">
+			                                    						</span>
+			                                    						<span class="CareTypes_Item_Footer">
+			                                    							<span>
+			                                    								<input type="checkbox" name="needsandpreference-caretypes" id="NeedsAndPreferences_DisabilityCare" value="disability-care">Disability Care
+			                                    							</span>
+			                                    						</span>
+		                                    						</label>
+		                                    					</div>
+		                                    					<div class="CareTypes_Item">
+		                                    						<label for="NeedsAndPreferences_SpecialNeedsCare">
+			                                    						<span class="CareTypes_Item_Header">
+			                                    							<img src="../src/img/care-types/special-needs-care.png" alt="Aged Care">
+			                                    						</span>
+			                                    						<span class="CareTypes_Item_Footer">
+			                                    							<span>
+			                                    								<input type="checkbox" name="needsandpreference-caretypes" id="NeedsAndPreferences_SpecialNeedsCare" value="special-needs-care">Special Needs Carer
+			                                    							</span>
+			                                    						</span>
+		                                    						</label>
+		                                    					</div>
+		                                    					
+		                                    				</div>
+		                                    			</div>
+		                                    		</div>
+		                                    		<div class="col-xs-12">
+		                                    			<h5 class="text-purple">Aged & Disability Care Qualifications</h5>
+		                                    			<div class="col-xs-12 text-reset">
+		                                    				Qualifications the Aged/Disability Carer is expected to have (optional)
+		                                    				<div class="row clearfix">
+		                                    					<div class="col-xs-12">
+		                                    						<table>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="aged-care-cert3-or-above" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-AgedCare_Cert3orAbove"></td>
+			                                    							<td><label for="NeedsAndPreference-AgedCare_Cert3orAbove">Certificate 3 or above in Aged Care</label></td>
+			                                    						</tr>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="home-community-care-cert3-or-above" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-HomeCommunity_Cert3orAbove"></td>
+			                                    							<td><label for="NeedsAndPreference-HomeCommunity_Cert3orAbove">Certificate 3 or above in Home and Community Care</label></td>
+			                                    						</tr>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="nursing-cert4" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-Nursing_Cert4"></td>
+			                                    							<td><label for="NeedsAndPreference-Nursing_Cert4">Certificate 4 in Nursing</label></td>
+			                                    						</tr>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="allied-health-assistance-cert4" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-AlliedHealthAssistance_Cert4"></td>
+			                                    							<td><label for="NeedsAndPreference-AlliedHealthAssistance_Cert4">Certificate 4 in Allied Health Assistance</label></td>
+			                                    						</tr>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="leisure-health-cert4" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-LeisureHealth_Cert4"></td>
+			                                    							<td><label for="NeedsAndPreference-LeisureHealth_Cert4">Certificate 4 in Leisure and Health</label></td>
+			                                    						</tr>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="nursing-diploma" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-Nursing_Diploma"></td>
+			                                    							<td><label for="NeedsAndPreference-Nursing_Diploma">Diploma of Nursing</label></td>
+			                                    						</tr>
+			                                    						<tr>
+			                                    							<td><input type="checkbox" value="leisure-health-diploma" name="needsandpreference-qualifications_expected" id="NeedsAndPreference-LeisureHealth_Diploma"></td>
+			                                    							<td><label for="NeedsAndPreference-LeisureHealth_Diploma">Diploma of Leisure and Health</label></td>
+			                                    						</tr>
+		                                    						</table>
+		                                    					</div>
+		                                    				</div>
+		                                    			</div>
+		                                    		</div>
+		                                    	</div>
+		                                    </div>
+		                                    
+		                                    <button class="btn btn-lg btn-primary">SAVE AND CONTINUE</button>&nbsp;
+		                                    <a href="#" class="NeedsAndPreference_Skip">>> Skip for now</a>
+		                                    <br/>
+		                                    <br/>
+		                                    
+		                                </div>
+		                            </form>
+		                            
+		                        </div>
+		                    </main>
+		                    
+		                    
+		                </div>
+		            </div>
+		            
+		        </div>
+		    </div>
+		    
+		    <footer class="site-footer">
+    <div class="inner">
+        
+        <div class="container">
+            <div class="row">
+            	
+            	<div class="content-block footer-navigation">
+            		<nav>
+            			<ul>
+            				<li><a href="#">ABOUT US</a></li>
+            				<li class="active"><a href="#">TIPS & RESOURCES</a></li>
+            				<li><a href="#">SUCCESS STORIES</a></li>
+            				<li><a href="#">CONTACT US</a></li>
+            			</ul>
+            		</nav>
+            	</div>
+                
+                <div class="content-block sitemap col-xs-12">
+                    <h4>SITE MAP</h4>
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Aged Care in Your Capital City: </b><br>
+							<ul class="no-padding">
+								<li><a href="#">Aged Care in Sydney (NSW)</a></li>
+								<li><a href="#">Aged Care in Melbourne (VIC)</a></li>
+								<li><a href="#">Aged Care in Brisbane (QLD)</a></li>
+								<li><a href="#">Aged Care in Perth (WA)</a></li>
+								<li><a href="#">Aged Care in Canberra (ACT)</a></li>
+								<li><a href="#">Aged Care in Adelaide (SA)</a></li>
+								<li><a href="#">Aged Care in Darwin (NT)</a></li>
+								<li><a href="#">Aged Care in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Disability Care in Your Capital City: </b><br>
+							<ul class="no-padding">
+								<li><a href="#">Disability Care in Sydney (NSW)</a></li>
+								<li><a href="#">Disability Care in Melbourne (VIC)</a></li>
+								<li><a href="#">Disability Care in Brisbane (QLD)</a></li>
+								<li><a href="#">Disability Care in Perth (WA)</a></li>
+								<li><a href="#">Disability Care in Canberra (ACT)</a></li>
+								<li><a href="#">Disability Care in Adelaide (SA)</a></li>
+								<li><a href="#">Disability Care in Darwin (NT)</a></li>
+								<li><a href="#">Disability Care in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Special Needs Child Care in Your Capital City: </b><br>
+							<ul>
+								<li><a href="#">Special Needs Child Care in Sydney (NSW)</a></li>
+								<li><a href="#">Special Needs Child Care in Melbourne (VIC)</a></li>
+								<li><a href="#">Special Needs Child Care in Brisbane (QLD)</a></li>
+								<li><a href="#">Special Needs Child Care in Perth (WA)</a></li>
+								<li><a href="#">Special Needs Child Care in Canberra (ACT)</a></li>
+								<li><a href="#">Special Needs Child Care in Adelaide (SA)</a></li>
+								<li><a href="#">Special Needs Child Care in Darwin (NT)</a></li>
+								<li><a href="#">Special Needs Child Care in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-3 sitemap-block">
+							<b>Find Care Jobs in Your Capital City: </b><br>
+							<ul class="no-padding">
+								<li><a href="#">Care Jobs in Sydney (NSW)</a></li>
+								<li><a href="#">Care Jobs in Melbourne (VIC)</a></li>
+								<li><a href="#">Care Jobs in Brisbane (QLD)</a></li>
+								<li><a href="#">Care Jobs in Perth (WA)</a></li>
+								<li><a href="#">Care Jobs in Canberra (ACT)</a></li>
+								<li><a href="#">Care Jobs in Adelaide (SA)</a></li>
+								<li><a href="#">Care Jobs in Darwin (NT)</a></li>
+								<li><a href="#">Care Jobs in Hobart (TAS)</a></li>
+							</ul>
+						</div>
+					</div>
+        </div> <!--end .content-block.sitemap-->
+
+            </div> <!--end .row -->
+        </div>
+    </div>
+</footer>
+
+<script src="//localhost:35729/livereload.js"></script>
+		    
+		</div>
+		
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="dist/js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+.admin.dashboard {
+    .admin-body {
+        padding-top: 15px;
+    }
+    .greeting {
+        font-family: Ubuntu, sans-serif;
+        color: $purple;
+        padding: 0 15px;
+    }
+    .fixed-sidebar {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .picture-area {
+            max-width: 150px;
+
+            img {
+                display: inline-block;
+                vertical-align: top;
+                width: 100%;
+            }
+        }
+        .links-area {
+            display: inline-block;
+            vertical-align: top;
+            a {
+                border: 0;
+                padding: 8px 12px;
+                text-decoration: underline;
+            }
+        }
+    }
+    .responsive-content {
+
+    }
+}
+
+.admin .dashboard-welcome {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    h1, h4 {
+        @include myriad-pro();
+    }
+    h1 {
+        color: $purple;
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 28px;
+        color: $blue;
+    }
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+    .btn {
+        @include border-radius(0);
+        &-lg {
+            font-size: 14px;
+            padding: 10px 30px;
+        }
+    }
+    section {
+        td {
+            div {
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+.admin .latest-messages {
+    background-color: $lightgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h2 {
+        @include myriad-pro(30px);
+    }
+}
+.admin .suggested-jobs {
+    background-color: $lightgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h2 {
+        @include myriad-pro(30px);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .admin.dashboard {
+        .admin-body {
+            img {
+                max-width: 240px;
+            }
+        }
+        .greeting {
+        }
+        .fixed-sidebar {
+
+            .picture-area {
+                max-width: 100%;
+                img {
+                }
+            }
+            .links-area {
+                margin-top: 15px;
+                a {
+                }
+            }
+        }
+        .responsive-content {
+
+        }
+    }
+
+
+    .admin .dashboard-welcome {
+        border: 1px solid #e8e8e8;
+        h1, h4 {
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        h4 {
+        }
+        header {
+            float: left;
+            width: 100%;
+            h4 {
+            }
+        }
+        .btn {
+            &-lg {
+            }
+        }
+        section {
+            @include boxshadow-inset();
+            padding-top: 30px;
+            padding-bottom: 20px;
+            &:after {
+                content: none;
+            }
+            td {
+                div {
+                }
+            }
+        }
+        
+    }
+}

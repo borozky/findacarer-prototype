@@ -1,0 +1,267 @@
+// styling for specific pages
+@import "pages/homepage";
+@import "pages/signin";
+@import "pages/register";
+@import "pages/search-results";
+@import "pages/profile";
+
+// admin
+@import "pages/availability";
+@import "pages/dashboard";
+@import "pages/needs-and-preferences";
+
+
+
+
+.owl-carousel.off {display: block;} // important
+
+
+
+
+//----------------------------------------------------
+.admin form.availability-preference {
+    background-color: $lightgrey;
+    h1, h3 {
+        color: $blue;
+    }
+    & > .col-xs-12 {
+        &:first-child {
+            
+        }
+        &:last-child {
+            .form-group {
+                margin-top: 15px;
+                background-color: #fff;
+                padding: 5px 15px;
+                margin-left: -15px;
+                margin-right: -15px;
+                & > div.abc-radio {
+                    span {
+                        &:last-child {
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    #DetailedAvailabilityPreferences {
+        font-family: Arial, Helvetica, sans-serif;
+        table {
+            tr {
+                th, td {
+                    padding-top: 3px;
+                    padding-bottom: 3px;
+                    text-align: center;
+                    border: 1px solid #ddd;
+                    &:first-child {
+                        text-align: left;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.carer-availability {
+    .fixed-sidebar {
+        .list-group {
+                border-top: 5px solid #7a277a;
+                margin-top: 25px;
+            .list-group-item {
+                border-radius: 0;
+                -webkit-border-radius: 0;
+            }
+        }
+    }
+}
+
+
+//----------------------------------------------------
+.admin form.needs-and-preferences {
+    font-family: Arial, Helvetica, sans-serif;
+    .form-group {
+        background-color: #fff;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: 15px;
+        border-top: 1px solid #e0e0e0;
+        border-bottom: 1px solid #e0e0e0;
+        
+        &:first-child {
+            margin-top: 15px;
+        }
+        .btn, .form-control {
+            @include border-radius(0);
+        }
+        input[type="text"], input[type="number"], textarea {
+            font-size: 16px;
+        } 
+    }
+}
+#Qualification_Requirements {
+    table {
+        margin-top: 15px;
+        tr {
+            td {
+                border-top: 0;
+                padding: 4px 0;
+                vertical-align: top;
+                &:first-child {
+                    width: 20px;
+                }
+                label {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+#NeedsAndPreferences_CareTypes {
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    padding: 20px 0;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item label {
+    display: block;
+    width: 100%;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Header {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90px;
+    min-width: 50px;
+    width: 50%;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Header img {
+    display: inline-block;
+    width: 100%;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Footer {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Footer span {
+    padding-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+#NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Footer span input[type='checkbox'] {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -7px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 768px){
+    #NeedsAndPreferences_CareTypes {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item label {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Header {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Header img {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Footer {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Footer span {
+    }
+
+    #NeedsAndPreferences_CareTypes .CareTypes_Item .CareTypes_Item_Footer span input[type='checkbox'] {
+    }
+}
+
+
+
+
+
+
+//----------------------------------------------------
+
+@media (min-width: 768px){
+    
+    
+    
+    
+    .admin form.availability-preference {
+        background-color: $lightgrey;
+        & > .col-xs-12 {
+            &:first-child {
+                
+            }
+            &:last-child {
+                .form-group {
+                    margin-top: 15px;
+                    background-color: #fff;
+                    padding: 5px 15px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    & > div.abc-radio {
+                        span {
+                            &:last-child {
+                                padding-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    
+    .admin form.needs-and-preferences {
+        .form-group {
+            margin-left: 0;
+            margin-right: 0;
+            border-top: 0;
+            border-bottom: 0;
+            
+            
+            
+        }
+        
+        .tip {
+            display: inline-block;
+            padding-top: 24px;
+        }
+        
+        table {
+            tr {
+                td, th {
+                    border-top: none;
+                }
+            }
+        }
+    }
+    
+    
+}
